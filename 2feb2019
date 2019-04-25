@@ -1,0 +1,513 @@
+student@T38:~$ touch file.txt
+student@T38:~$ touch f1
+student@T38:~$ cat >f1
+hloo
+welcome
+^Z  
+[1]+  Stopped                 cat > f1
+student@T38:~$ cat f1
+hloo
+welcome
+student@T38:~$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ cd lmca
+student@T38:~/ajce/mca/lmca$ touch f1
+student@T38:~/ajce/mca/lmca$ cd rmca
+bash: cd: rmca: No such file or directory
+student@T38:~/ajce/mca/lmca$ cd ..
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ touch f1
+student@T38:~/ajce/mca/rmca$ cat >f1
+hai
+hlooo
+^Z
+[2]+  Stopped                 cat > f1
+student@T38:~/ajce/mca/rmca$ cat f1
+hai
+hlooo
+student@T38:~/ajce/mca/rmca$ cat >f1.txt
+hloo
+welcome
+^C
+student@T38:~/ajce/mca/rmca$ cat f1.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat >file.txt
+hiiiiii^C
+student@T38:~/ajce/mca/rmca$ cat file.txt
+student@T38:~/ajce/mca/rmca$ cat >file.txt
+hii
+^C
+student@T38:~/ajce/mca/rmca$ cat file.txt
+hii
+student@T38:~/ajce/mca/rmca$ cat *.txt
+hloo
+welcome
+hii
+out.txt
+student@T38:~/ajce/mca/rmca$ cat f1.txt f2.txt
+hloo
+welcome
+cat: f2.txt: No such file or directory
+student@T38:~/ajce/mca/rmca$ cat f1.txt file.txt
+hloo
+welcome
+hii
+student@T38:~/ajce/mca/rmca$ cat >file1.txt
+to
+ajce
+^C
+student@T38:~/ajce/mca/rmca$ cat file1.txt
+to
+ajce
+student@T38:~/ajce/mca/rmca$ cat f1.txt > file1.txt
+student@T38:~/ajce/mca/rmca$ cat file1.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat f1.txt > file2.txt
+student@T38:~/ajce/mca/rmca$ cat file2.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat f1.txt file.txt >file3.txt
+student@T38:~/ajce/mca/rmca$ cat file3.txt
+hloo
+welcome
+hii
+student@T38:~/ajce/mca/rmca$ cat f1.txt >>file2.txt
+student@T38:~/ajce/mca/rmca$ cat file2.txt
+hloo
+welcome
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat f1.txt >>file1.txt
+student@T38:~/ajce/mca/rmca$ cat file1.txt
+hloo
+welcome
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat -n f1.txt
+     1	hloo
+     2	welcome
+student@T38:~/ajce/mca/rmca$ cat f1 file
+hai
+hlooo
+cat: file: No such file or directory
+student@T38:~/ajce/mca/rmca$ cat f1.txt file.txt file2.txt
+hloo
+welcome
+hii
+hloo
+welcome
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat -e f1.txt
+hloo$
+welcome$
+student@T38:~/ajce/mca/rmca$ cat -T f1.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat f1.txt file.txt file2.txt | sort >file3.txt
+student@T38:~/ajce/mca/rmca$ cat file3.txt
+hii
+hloo
+hloo
+hloo
+welcome
+welcome
+welcome
+student@T38:~/ajce/mca/rmca$ touch file1
+student@T38:~/ajce/mca/rmca$ cat >file1.txt
+hloo
+welcome to AJCE
+^C
+student@T38:~/ajce/mca/rmca$ cat file1.txt
+hloo
+welcome to AJCE
+student@T38:~/ajce/mca/rmca$ touch file2
+student@T38:~/ajce/mca/rmca$ cat >file2.txt
+What is your name
+^C
+student@T38:~/ajce/mca/rmca$ cat file2.txt
+What is your name
+student@T38:~/ajce/mca/rmca$ cat file1.txt file2.txt
+hloo
+welcome to AJCE
+What is your name
+student@T38:~/ajce/mca/rmca$ cat file1.txt; file2.txt;
+hloo
+welcome to AJCE
+file2.txt: command not found
+student@T38:~/ajce/mca/rmca$ cat file1.txt; file2.txt
+hloo
+welcome to AJCE
+file2.txt: command not found
+student@T38:~/ajce/mca/rmca$ cat file1.txt ; file2.txt
+hloo
+welcome to AJCE
+file2.txt: command not found
+student@T38:~/ajce/mca/rmca$ cat file1.txt ; file2.txt ;
+hloo
+welcome to AJCE
+file2.txt: command not found
+student@T38:~/ajce/mca/rmca$ cat file1.txt; file2.txt;
+hloo
+welcome to AJCE
+file2.txt: command not found
+student@T38:~/ajce/mca/rmca$ cat file1.txt; cat file2.txt;
+hloo
+welcome to AJCE
+What is your name
+student@T38:~/ajce/mca/rmca$ touch file3
+student@T38:~/ajce/mca/rmca$ cat > file3
+Have A nice Day
+^C       
+student@T38:~/ajce/mca/rmca$ cat file3.txt
+hii
+hloo
+hloo
+hloo
+welcome
+welcome
+welcome
+student@T38:~/ajce/mca/rmca$ touch file4
+student@T38:~/ajce/mca/rmca$ cat >file4.txt
+1
+2
+
+3
+
+4
+
+5
+
+^C
+student@T38:~/ajce/mca/rmca$ cat file4.txt
+1
+2
+
+3
+
+4
+
+5
+
+student@T38:~/ajce/mca/rmca$ cat -s file4.txt
+1
+2
+
+3
+
+4
+
+5
+
+student@T38:~/ajce/mca/rmca$ cat -S file4.txt
+cat: invalid option -- 'S'
+Try 'cat --help' for more information.
+student@T38:~/ajce/mca/rmca$ cat -n file4.txt
+     1	1
+     2	2
+     3	
+     4	
+     5	
+     6	
+     7	3
+     8	
+     9	4
+    10	
+    11	
+    12	
+    13	
+    14	
+    15	
+    16	5
+    17	
+student@T38:~/ajce/mca/rmca$ cat -s file4.txt
+1
+2
+
+3
+
+4
+
+5
+
+student@T38:~/ajce/mca/rmca$ cat *.txt
+hloo
+welcome
+hloo
+welcome to AJCE
+What is your name
+hii
+hloo
+hloo
+hloo
+welcome
+welcome
+welcome
+1
+2
+
+
+
+
+3
+
+4
+
+
+
+
+
+
+5
+
+hii
+out.txt
+student@T38:~/ajce/mca/rmca$ cat file2.txt file3.txt
+What is your name
+hii
+hloo
+hloo
+hloo
+welcome
+welcome
+welcome
+student@T38:~/ajce/mca/rmca$ cat file2.txt > file3.txt
+student@T38:~/ajce/mca/rmca$ cat > file3.txt
+how old are you
+^C
+student@T38:~/ajce/mca/rmca$ cat file2.txt file3.txt
+What is your name
+how old are you
+student@T38:~/ajce/mca/rmca$ cat tac file4.txt
+cat: tac: No such file or directory
+1
+2
+
+
+
+
+3
+
+4
+
+
+
+
+
+
+5
+
+student@T38:~/ajce/mca/rmca$ tac file4.txt
+
+5
+
+
+
+
+
+
+4
+
+3
+
+
+
+
+2
+1
+student@T38:~/ajce/mca/rmca$ cat -E file3.txt
+how old are you$
+student@T38:~/ajce/mca/rmca$ cat -E "file3.txt"
+how old are you$
+student@T38:~/ajce/mca/rmca$ cat -E "file3"
+Have A nice Day$
+student@T38:~/ajce/mca/rmca$ cat -A "file3"
+Have A nice Day$
+student@T38:~/ajce/mca/rmca$ cat -A "file4"
+student@T38:~/ajce/mca/rmca$ cat -A "file1"
+student@T38:~/ajce/mca/rmca$ variable='cat f1.txt'
+student@T38:~/ajce/mca/rmca$ cat f1.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat -v file3.txt
+how old are you
+student@T38:~/ajce/mca/rmca$ cat -b file4.txt
+     1	1
+     2	2
+
+
+
+
+     3	3
+
+     4	4
+
+
+
+
+
+
+     5	5
+
+student@T38:~/ajce/mca/rmca$ cat -t file4.txt
+1
+2
+
+
+
+
+3
+
+4
+
+
+
+
+
+
+5
+
+student@T38:~/ajce/mca/rmca$ cat -t file3.txt
+how old are you
+student@T38:~/ajce/mca/rmca$ mv file1.txt file2.txt
+student@T38:~/ajce/mca/rmca$ ls file2.txt
+file2.txt
+student@T38:~/ajce/mca/rmca$ ls
+f1  f1.txt  file1  file2  file2.txt  file3  file3.txt  file4  file4.txt  file.txt  out.txt
+student@T38:~/ajce/mca/rmca$ cat file1.txt
+cat: file1.txt: No such file or directory
+student@T38:~/ajce/mca/rmca$ cat file2.txt
+hloo
+welcome to AJCE
+student@T38:~/ajce/mca/rmca$ mv file2.txt directory1
+\student@T38:~/ajce/mca/rmca$ ls
+directory1  f1  f1.txt  file1  file2  file3  file3.txt  file4  file4.txt  file.txt  out.txt
+student@T38:~/ajce/mca/rmca$ cat directory1
+hloo
+welcome to AJCE
+student@T38:~/ajce/mca/rmca$ mv file3.txt file4.txt semester
+mv: target 'semester' is not a directory
+student@T38:~/ajce/mca/rmca$ mv file3.txt file4.txt directory1
+mv: target 'directory1' is not a directory
+student@T38:~/ajce/mca/rmca$ mv file3.txt file4.txt directory2
+mv: target 'directory2' is not a directory
+student@T38:~/ajce/mca/rmca$ mv file2.txt lmca
+mv: cannot stat 'file2.txt': No such file or directory
+student@T38:~/ajce/mca/rmca$ touch f2.txt
+student@T38:~/ajce/mca/rmca$ touch f3.txt
+student@T38:~/ajce/mca/rmca$ cat f1.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ cat f2.txt
+1
+2
+3
+4
+5
+6
+student@T38:~/ajce/mca/rmca$ cat f3.txt
+a
+b
+c
+d
+e
+f
+student@T38:~/ajce/mca/rmca$ mv f1.txt f4.txt
+student@T38:~/ajce/mca/rmca$ cat f4.txt
+hloo
+welcome
+student@T38:~/ajce/mca/rmca$ ls
+directory1  f1  f2.txt  f3.txt  f4.txt  file1  file2  file3  file3.txt  file4  file4.txt  file.txt  out.txt
+student@T38:~/ajce/mca/rmca$ mv -i f4.txt f5.txt
+mv: overwrite 'f5.txt'? n
+student@T38:~/ajce/mca/rmca$ ls
+directory1  f1  f2.txt  f3.txt  f4.txt  f5.txt  file1  file2  file3  file3.txt  file4  file4.txt  file.txt  out.txt
+student@T38:~/ajce/mca/rmca$ ls
+f2.txt  f3.txt  f4.txt  f5.txt  file3.txt  file4.txt  out.txt
+student@T38:~/ajce/mca/rmca$ mc f2.txt a
+
+Command 'mc' not found, but can be installed with:
+
+apt install mc
+Please ask your administrator.
+
+student@T38:~/ajce/mca/rmca$ mv f2.txt a
+student@T38:~/ajce/mca/rmca$ mv a abc
+student@T38:~/ajce/mca/rmca$ ls
+abc  f3.txt  f4.txt  f5.txt  file3.txt  file4.txt  out.txt
+student@T38:~/ajce/mca/rmca$ mv *.txt abc
+student@T38:~/ajce/mca/rmca$ cd ..
+student@T38:~/ajce/mca$ cd lmca
+student@T38:~/ajce/mca/lmca$ touch f1.txt
+student@T38:~/ajce/mca/lmca$ touch f2.txt
+student@T38:~/ajce/mca/lmca$ touch f3.txt
+student@T38:~/ajce/mca/lmca$ cat >f4.txt
+hai
+welcome
+^C
+student@T38:~/ajce/mca/lmca$ cat > f1.txt
+hai
+welcome to AJCE
+^C
+student@T38:~/ajce/mca/lmca$ 
+student@T38:~/ajce/mca/lmca$ cat > f2.txt
+How Are you
+^C
+student@T38:~/ajce/mca/lmca$ cat > f3.txt
+How was the day
+^C
+student@T38:~/ajce/mca/lmca$ 
+student@T38:~/ajce/mca/lmca$ cat f1.txt
+hai
+welcome to AJCE
+student@T38:~/ajce/mca/lmca$ cat f2.txt
+How Are you
+student@T38:~/ajce/mca/lmca$ cat f3.txt
+How was the day
+student@T38:~/ajce/mca/lmca$ cat *.txt
+hai
+welcome to AJCE
+How Are you
+How was the day
+student@T38:~/ajce/mca/lmca$ cat f2.txt f3.txt
+How Are you
+How was the day
+student@T38:~/ajce/mca/lmca$ cat f2.txt
+How Are you
+student@T38:~/ajce/mca/lmca$ cat f3.txt > newfile.txt
+student@T38:~/ajce/mca/lmca$ cat newfile.txt
+How was the day
+student@T38:~/ajce/mca/lmca$ cat f1.txt f2.txt f3.txt > newfile.txt
+student@T38:~/ajce/mca/lmca$ cat newfile.txt
+hai
+welcome to AJCE
+How Are you
+How was the day
+student@T38:~/ajce/mca/lmca$ cat f1.txt >> f2.txt
+student@T38:~/ajce/mca/lmca$ cat f2.txt
+How Are you
+hai
+welcome to AJCE
+student@T38:~/ajce/mca/lmca$ mkdir abc
+student@T38:~/ajce/mca/lmca$ mv f1.txt abc
+student@T38:~/ajce/mca/lmca$ ls
+abc  f2.txt  f3.txt  newfile.txt
+student@T38:~/ajce/mca/lmca$ mv f2.txt f3.txt abc
+student@T38:~/ajce/mca/lmca$ ls
+abc  newfile.txt
+student@T38:~/ajce/mca/lmca$ mv *.txt abc
+student@T38:~/ajce/mca/lmca$ ls
+abc
+student@T38:~/ajce/mca/lmca$ mv abc def
+student@T38:~/ajce/mca/lmca$ ls
+def
+student@T38:~/ajce/mca/lmca$ mv -i f1.txt f2.txt
+mv: cannot stat 'f1.txt': No such file or directory
+student@T38:~/ajce/mca/lmca$ mv -i f1.txt file.txt
+mv: cannot stat 'f1.txt': No such file or directory
+student@T38:~/ajce/mca/lmca$ 
+

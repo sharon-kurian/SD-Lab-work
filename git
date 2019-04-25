@@ -1,0 +1,121 @@
+student@T38:~$ git sharongit
+git: 'sharongit' is not a git command. See 'git --help'.
+student@T38:~$ pwd
+/home/student
+student@T38:~$ cd sharongit
+student@T38:~/sharongit$ git init
+Initialized empty Git repository in /home/student/sharongit/.git/
+student@T38:~/sharongit$ git clone https://github.com/sharon-kurian/repo3
+Cloning into 'repo3'...
+warning: You appear to have cloned an empty repository.
+student@T38:~/sharongit$ cd repo3
+student@T38:~/sharongit/repo3$ git config --global user.name "sharon-kurian"
+student@T38:~/sharongit/repo3$ git config --global user.email "sharonkurian@mca.ajce.in"
+student@T38:~/sharongit/repo3$ git init mytest
+Initialized empty Git repository in /home/student/sharongit/repo3/mytest/.git/
+student@T38:~/sharongit/repo3$ gedit sample
+
+(gedit:5929): Gtk-WARNING **: 12:27:51.469: Failed to measure available space: The specified location is not supported
+student@T38:~/sharongit/repo3$ gedit sample.c
+student@T38:~/sharongit/repo3$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sample.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@T38:~/sharongit/repo3$ git add sample.c
+student@T38:~/sharongit/repo3$ git commit -m "my first commit"
+[master (root-commit) e190847] my first commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 sample.c
+student@T38:~/sharongit/repo3$ git push origin master
+Username for 'https://github.com': sharon-kurian
+Password for 'https://sharon-kurian@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 278 bytes | 278.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sharon-kurian/repo3
+ * [new branch]      master -> master
+student@T38:~/sharongit/repo3$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+student@T38:~/sharongit/repo3$ git revert "hai"
+fatal: bad revision 'hai'
+student@T38:~/sharongit/repo3$ git rm sample.c
+rm 'sample.c'
+student@T38:~/sharongit/repo3$ git branch branch1
+student@T38:~/sharongit/repo3$ git branch
+  branch1
+* master
+student@T38:~/sharongit/repo3$ git chechout branch1
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+student@T38:~/sharongit/repo3$ git checkout branch1
+D	sample.c
+Switched to branch 'branch1'
+student@T38:~/sharongit/repo3$ git branch
+* branch1
+  master
+student@T38:~/sharongit/repo3$ git push orgin branch1
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@T38:~/sharongit/repo3$ git push origin branch1
+Username for 'https://github.com': sharon-kurian
+Password for 'https://sharon-kurian@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/sharon-kurian/repo3/pull/new/branch1
+remote: 
+To https://github.com/sharon-kurian/repo3
+ * [new branch]      branch1 -> branch1
+student@T38:~/sharongit/repo3$ gedit sample.c
+student@T38:~/sharongit/repo3$ gedit sample1.c
+student@T38:~/sharongit/repo3$ git add sample1.c
+student@T38:~/sharongit/repo3$ gedit sample2.c
+student@T38:~/sharongit/repo3$ git commit "my second commit"
+error: pathspec 'my second commit' did not match any file(s) known to git.
+student@T38:~/sharongit/repo3$ git commit -m "my second commit"
+[branch1 7f597b7] my second commit
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ rename sample.c => sample1.c (64%)
+student@T38:~/sharongit/repo3$ git push origin master
+Username for 'https://github.com': sharon-kurian
+Password for 'https://sharon-kurian@github.com': 
+To https://github.com/sharon-kurian/repo3
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/sharon-kurian/repo3'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+student@T38:~/sharongit/repo3$ git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/sharon-kurian/repo3
+ * branch            master     -> FETCH_HEAD
+   e190847..5711b13  master     -> origin/master
+student@T38:~/sharongit/repo3$ pwd
+/home/student/sharongit/repo3
+student@T38:~/sharongit/repo3$ git merge origin master
+merge: origin - not something we can merge
+student@T38:~/sharongit/repo3$ 
+

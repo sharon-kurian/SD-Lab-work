@@ -1,0 +1,23 @@
+student@S14:~$ gedit Server.java
+student@S14:~$ gedit Server1.java
+student@S14:~$ javac Server1.java
+student@S14:~$ java Server1
+waiting for client.........
+client connected 
+client:>Hai..,How do you do???
+i am in SD lab 
+     
+
+student@S14:~$ java Server1
+waiting for client.........
+client connected 
+client:>hiiii
+hlooo how are you
+client:>fineeee
+
+
+
+
+
+
+

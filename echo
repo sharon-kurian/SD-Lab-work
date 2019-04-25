@@ -1,0 +1,36 @@
+						Client program
+
+student@S14:~$ gedit Client.java
+student@S14:~$ javac Client.java
+student@S14:~$ java Client
+ Enter text..
+ if client 'quit' type  exit
+haiiiiii
+Server said : haiiiiii
+Enter text 
+hlooooo
+Server said : hlooooo
+Enter text 
+
+						Server program
+
+
+
+student@S14:~$ gedit Server.java
+student@S14:~$ javac Server.java
+student@S14:~$ java Server
+Server is running...
+connection establised
+server send echo to client 
+ssd
+server send echo to client 
+
+
+
+
+
+
+
+
+
+

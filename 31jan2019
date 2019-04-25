@@ -1,0 +1,284 @@
+
+
+student@T38:~$ mkdir ajce
+student@T38:~$ cd ajce
+student@T38:~/ajce$ mkdir mca
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ mkdir rmca
+student@T38:~/ajce/mca$ mkdir lmca
+student@T38:~/ajce/mca$ mkdir intmca
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ cd ..
+student@T38:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T38:~/ajce/mca$ cd /
+student@T38:/$ cd ~
+student@T38:~$ cd ajce
+student@T38:~/ajce$ 
+student@T38:~$ ls
+ajce     Documents  examples.desktop  Pictures  sample     testpage
+Desktop  Downloads  Music             Public    Templates  Videos
+student@T38:~$ ls -l
+total 56
+drwxr-xr-x 3 student student 4096 Jan 31 20:05 ajce
+drwxr-xr-x 4 student student 4096 Jan 29 21:27 Desktop
+drwxr-xr-x 2 student student 4096 Nov 26 11:54 Documents
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Downloads
+-rw-r--r-- 1 student student 8980 Nov 23 10:32 examples.desktop
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Music
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Pictures
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Public
+drwxr-xr-x 2 student student 4096 Jan 29 20:21 sample
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Templates
+-rw-r--r-- 1 student student   10 Jan 28 18:26 testpage
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Videos
+student@T38:~$ ls > out.txt
+student@T38:~$ cat out.txt
+ajce
+Desktop
+Documents
+Downloads
+examples.desktop
+Music
+out.txt
+Pictures
+Public
+sample
+Templates
+testpage
+Videos
+student@T38:~$ pwd
+/home/student
+student@T38:~$ ls -t
+out.txt  Desktop  testpage   Downloads  Pictures  Templates  examples.desktop
+ajce     sample   Documents  Music      Public    Videos
+student@T38:~$ ls -l
+total 60
+drwxr-xr-x 3 student student 4096 Jan 31 20:05 ajce
+drwxr-xr-x 4 student student 4096 Jan 29 21:27 Desktop
+drwxr-xr-x 2 student student 4096 Nov 26 11:54 Documents
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Downloads
+-rw-r--r-- 1 student student 8980 Nov 23 10:32 examples.desktop
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Music
+-rw-r--r-- 1 student student  113 Jan 31 20:25 out.txt
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Pictures
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Public
+drwxr-xr-x 2 student student 4096 Jan 29 20:21 sample
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Templates
+-rw-r--r-- 1 student student   10 Jan 28 18:26 testpage
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Videos
+student@T38:~$ ls -la
+total 112
+drwxr-xr-x 18 student student 4096 Jan 31 20:25 .
+drwxr-xr-x  5 root    root    4096 Nov 23 10:32 ..
+drwxr-xr-x  3 student student 4096 Jan 31 20:05 ajce
+-rw-------  1 student student 1400 Jan 29 21:46 .bash_history
+-rw-r--r--  1 student student  220 Nov 23 10:32 .bash_logout
+-rw-r--r--  1 student student 3771 Nov 23 10:32 .bashrc
+drwx------ 15 student student 4096 Jan 28 18:43 .cache
+drwx------ 17 student student 4096 Jan 28 17:45 .config
+drwxr-xr-x  4 student student 4096 Jan 29 21:27 Desktop
+drwxr-xr-x  2 student student 4096 Nov 26 11:54 Documents
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Downloads
+-rw-r--r--  1 student student 8980 Nov 23 10:32 examples.desktop
+drwx------  3 student student 4096 Nov 27 14:50 .gnupg
+-rw-------  1 student student 3060 Jan 31 20:00 .ICEauthority
+drwx------  3 student student 4096 Nov 23 10:33 .local
+drwx------  5 student student 4096 Nov 27 14:46 .mozilla
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Music
+-rw-r--r--  1 student student  113 Jan 31 20:25 out.txt
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Pictures
+-rw-r--r--  1 student student  807 Nov 23 10:32 .profile
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Public
+drwxr-xr-x  2 student student 4096 Jan 29 20:21 sample
+drwx------  2 student student 4096 Nov 27 14:50 .ssh
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Templates
+-rw-r--r--  1 student student   10 Jan 28 18:26 testpage
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Videos
+student@T38:~$ ls -t
+out.txt  Desktop  testpage   Downloads  Pictures  Templates  examples.desktop
+ajce     sample   Documents  Music      Public    Videos
+student@T38:~$ ls -r
+Videos    Templates  Public    out.txt  examples.desktop  Documents  ajce
+testpage  sample     Pictures  Music    Downloads         Desktop
+student@T38:~$ cd mca
+bash: cd: mca: No such file or directory
+student@T38:~$ cd/
+bash: cd/: No such file or directory
+student@T38:~$ cd /
+student@T38:/$ cd ..
+student@T38:/$ cd ~
+student@T38:~$ cd mca
+bash: cd: mca: No such file or directory
+student@T38:~$ mkdir mca
+student@T38:~$ cd /
+student@T38:/$ cd ~
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ ls >out.txt
+student@T38:~/ajce/mca$ cat out.txt
+intmca
+lmca
+out.txt
+rmca
+student@T38:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T38:~/ajce/mca$ ls ajce/mca
+ls: cannot access 'ajce/mca': No such file or directory
+student@T38:~/ajce/mca$ cd ~
+student@T38:~$ ls ..
+android  mca  student
+student@T38:~$ ls >out.txt
+student@T38:~$ pwd
+/home/student
+student@T38:~$ ls -l
+total 64
+drwxr-xr-x 3 student student 4096 Jan 31 20:05 ajce
+drwxr-xr-x 4 student student 4096 Jan 29 21:27 Desktop
+drwxr-xr-x 2 student student 4096 Nov 26 11:54 Documents
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Downloads
+-rw-r--r-- 1 student student 8980 Nov 23 10:32 examples.desktop
+drwxr-xr-x 2 student student 4096 Jan 31 20:32 mca
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Music
+-rw-r--r-- 1 student student  117 Jan 31 20:40 out.txt
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Pictures
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Public
+drwxr-xr-x 2 student student 4096 Jan 29 20:21 sample
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Templates
+-rw-r--r-- 1 student student   10 Jan 28 18:26 testpage
+drwxr-xr-x 2 student student 4096 Nov 23 10:33 Videos
+student@T38:~$ ls -a
+.   ajce           .bash_logout  .cache   Desktop    Downloads         .gnupg         .local  .mozilla  out.txt   .profile  sample  Templates  Videos
+..  .bash_history  .bashrc       .config  Documents  examples.desktop  .ICEauthority  mca     Music     Pictures  Public    .ssh    testpage
+student@T38:~$ ls -la
+total 116
+drwxr-xr-x 19 student student 4096 Jan 31 20:32 .
+drwxr-xr-x  5 root    root    4096 Nov 23 10:32 ..
+drwxr-xr-x  3 student student 4096 Jan 31 20:05 ajce
+-rw-------  1 student student 1400 Jan 29 21:46 .bash_history
+-rw-r--r--  1 student student  220 Nov 23 10:32 .bash_logout
+-rw-r--r--  1 student student 3771 Nov 23 10:32 .bashrc
+drwx------ 15 student student 4096 Jan 28 18:43 .cache
+drwx------ 17 student student 4096 Jan 28 17:45 .config
+drwxr-xr-x  4 student student 4096 Jan 29 21:27 Desktop
+drwxr-xr-x  2 student student 4096 Nov 26 11:54 Documents
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Downloads
+-rw-r--r--  1 student student 8980 Nov 23 10:32 examples.desktop
+drwx------  3 student student 4096 Nov 27 14:50 .gnupg
+-rw-------  1 student student 3060 Jan 31 20:00 .ICEauthority
+drwx------  3 student student 4096 Nov 23 10:33 .local
+drwxr-xr-x  2 student student 4096 Jan 31 20:32 mca
+drwx------  5 student student 4096 Nov 27 14:46 .mozilla
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Music
+-rw-r--r--  1 student student  117 Jan 31 20:40 out.txt
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Pictures
+-rw-r--r--  1 student student  807 Nov 23 10:32 .profile
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Public
+drwxr-xr-x  2 student student 4096 Jan 29 20:21 sample
+drwx------  2 student student 4096 Nov 27 14:50 .ssh
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Templates
+-rw-r--r--  1 student student   10 Jan 28 18:26 testpage
+drwxr-xr-x  2 student student 4096 Nov 23 10:33 Videos
+student@T38:~$ ls -s
+total 64
+ 4 ajce      4 Documents  12 examples.desktop   4 Music     4 Pictures   4 sample      4 testpage
+ 4 Desktop   4 Downloads   4 mca                4 out.txt   4 Public     4 Templates   4 Videos
+student@T38:~$ ls -t
+out.txt  ajce     sample    Documents  Music     Public     Videos
+mca      Desktop  testpage  Downloads  Pictures  Templates  examples.desktop
+student@T38:~$ ls
+ajce     Documents  examples.desktop  Music    Pictures  sample     testpage
+Desktop  Downloads  mca               out.txt  Public    Templates  Videos
+student@T38:~$ ls -S
+examples.desktop  Desktop    Downloads  Music     Public  Templates  out.txt
+ajce              Documents  mca        Pictures  sample  Videos     testpage
+student@T38:~$ ls *
+examples.desktop  out.txt  testpage
+
+ajce:
+mca
+
+Desktop:
+ form.html   nn  'Rini Mca'
+
+Documents:
+exception  exception.cpp  exception.o  q2.cpp  q2.o
+
+Downloads:
+
+mca:
+
+Music:
+
+Pictures:
+
+Public:
+
+sample:
+
+Templates:
+
+Videos:
+student@T38:~$ ls -R
+.:
+ajce     Documents  examples.desktop  Music    Pictures  sample     testpage
+Desktop  Downloads  mca               out.txt  Public    Templates  Videos
+
+./ajce:
+mca
+
+./ajce/mca:
+intmca  lmca  out.txt  rmca
+
+./ajce/mca/intmca:
+
+./ajce/mca/lmca:
+
+./ajce/mca/rmca:
+
+./Desktop:
+ form.html   nn  'Rini Mca'
+
+./Desktop/nn:
+first.html  image1.jpeg
+
+'./Desktop/Rini Mca':
+'linux cmds'
+
+./Documents:
+exception  exception.cpp  exception.o  q2.cpp  q2.o
+
+./Downloads:
+
+./mca:
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./sample:
+
+./Templates:
+
+./Videos:
+student@T38:~$ ls -d */
+ajce/     Documents/  mca/    Pictures/  sample/     Videos/
+Desktop/  Downloads/  Music/  Public/    Templates/
+student@T38:~$ ls -d $PWD/*
+/home/student/ajce              /home/student/mca       /home/student/sample
+/home/student/Desktop           /home/student/Music     /home/student/Templates
+/home/student/Documents         /home/student/out.txt   /home/student/testpage
+/home/student/Downloads         /home/student/Pictures  /home/student/Videos
+/home/student/examples.desktop  /home/student/Public
+student@T38:~$ cd rmca
+bash: cd: rmca: No such file or directory
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ ls >out.txt
+student@T38:~/ajce/mca/rmca$ ls -R
+.:
+out.txt
+student@T38:~/ajce/mca/rmca$ 

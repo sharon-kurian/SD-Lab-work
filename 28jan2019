@@ -1,0 +1,48 @@
+student@T38:~$ echo sharon
+sharon
+student@T38:~$ read a
+sharon
+student@T38:~$ echo $a
+sharon
+student@T38:~$ echo a
+a
+student@T38:~$ man echo
+student@T38:~$ echo -n
+student@T38:~$ echo -e"greeks\nfor \ngreeks"
+-egreeks\nfor \ngreeks
+student@T38:~$ echo -e "greeks\nfor \ngreeks"
+greeks
+for 
+greeks
+student@T38:~$ echo -e "greeks\c for greeks "
+greeksstudent@T38:~$ echo -e "greeks\tfor \tgreeks"
+greeks	for 	greeks
+student@T38:~$ echo -e "greeks\rfor greeks"
+for greeks
+student@T38:~$ echo -e "greeks\vfor \vgreeks"
+greeks
+      for 
+          greeks
+student@T38:~$ echo -e "\agreeks for greeks"
+greeks for greeks
+student@T38:~$ echo *
+Desktop Documents Downloads examples.desktop Music Pictures Public Templates Videos
+student@T38:~$ echo -n "geeks for geeks"
+geeks for geeksstudent@T38:~$ echo The value of a is $a
+The value of a is sharon
+student@T38:~$ echo a=$a
+a=sharon
+student@T38:~$ echo *.jpeg
+*.jpeg
+student@T38:~$ echo "Test Page" > testpage
+student@T38:~$ man ls
+student@T38:~$ man man
+student@T38:~$ read a
+sha
+student@T38:~$ read b
+ron
+student@T38:~$ echo $a,$b
+sha,ron
+student@T38:~$ echo $a$b
+sharon
+

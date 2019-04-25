@@ -1,0 +1,222 @@
+student@S30:~$ mkdir ajce
+mkdir: cannot create directory ‘ajce’: File exists
+student@S30:~$ cd rmca
+bash: cd: rmca: No such file or directory
+student@S30:~$ mkdir rmca
+student@S30:~$ cd ajce
+student@S30:~/ajce$ mkdir mca
+student@S30:~/ajce$ cd mca
+student@S30:~/ajce/mca$ mkdir rmca
+student@S30:~/ajce/mca$ mkdir lmca
+student@S30:~/ajce/mca$ mkdir imca
+student@S30:~/ajce/mca$ cd rmca
+student@S30:~/ajce/mca/rmca$ cat > f1.txt
+Hai
+Welcome to AJCE
+student@S30:~/ajce/mca/rmca$ cat f1.txt
+Hai
+Welcome to AJCE
+student@S30:~/ajce/mca/rmca$ cat f2.txt
+cat: f2.txt: No such file or directory
+student@S30:~/ajce/mca/rmca$ cat > f2.txt
+How Are You
+student@S30:~/ajce/mca/rmca$ cat f2.txt
+How Are You
+student@S30:~/ajce/mca/rmca$ cat > f3.txt
+1
+2
+
+3
+
+
+
+
+4
+
+
+
+5
+
+
+6 
+student@S30:~/ajce/mca/rmca$ cat f3.txt
+1
+2
+
+3
+
+
+
+
+4
+
+
+
+5
+
+
+6
+student@S30:~/ajce/mca/rmca$ cat > f4.txt
+What is your name 
+student@S30:~/ajce/mca/rmca$ cat f4.txt
+What is your name
+student@S30:~/ajce/mca/rmca$ cat f2.txt f4.txt
+How Are You
+What is your name
+student@S30:~/ajce/mca/rmca$ cat f4.txt > f1.txt
+student@S30:~/ajce/mca/rmca$ cat f1.txt
+What is your name
+student@S30:~/ajce/mca/rmca$ cat f1.txt f3.txt >f4.txt
+student@S30:~/ajce/mca/rmca$ cat f1.txt f3.txt > f4.txt
+student@S30:~/ajce/mca/rmca$ cat f4.txt
+What is your name
+1
+2
+
+3
+
+
+
+
+4
+
+
+
+5
+
+
+6
+student@S30:~/ajce/mca/rmca$ cat > f5.txt
+How old are you
+student@S30:~/ajce/mca/rmca$ cat f6.txt
+cat: f6.txt: No such file or directory
+student@S30:~/ajce/mca/rmca$ cat > f6.txt
+Address
+student@S30:~/ajce/mca/rmca$ ls
+f1.txt  f2.txt  f3.txt  f4.txt  f5.txt  f6.txt
+student@S30:~/ajce/mca/rmca$ cat f5.txt >> f6.txt
+student@S30:~/ajce/mca/rmca$ cat f6.txt
+Address
+How old are you
+student@S30:~/ajce/mca/rmca$ mv f1.txt f2.txt
+student@S30:~/ajce/mca/rmca$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@S30:~/ajce/mca/rmca$ ls
+f2.txt  f3.txt  f4.txt  f5.txt  f6.txt
+student@S30:~/ajce/mca/rmca$ mv f24.txt a
+mv: cannot stat 'f24.txt': No such file or directory
+student@S30:~/ajce/mca/rmca$ mv f4.txt a
+student@S30:~/ajce/mca/rmca$ s
+s: command not found
+student@S30:~/ajce/mca/rmca$ ls
+a  f2.txt  f3.txt  f5.txt  f6.txt
+student@S30:~/ajce/mca/rmca$ mv f1.txt f2.txt a
+mv: cannot stat 'f1.txt': No such file or directory
+student@S30:~/ajce/mca/rmca$ mv f1.txt f2.txt a
+student@S30:~/ajce/mca/rmca$ ls
+a  f3.txt  f5.txt  f6.txt
+student@S30:~/ajce/mca/rmca$ cat f5.txt
+How old are you
+student@S30:~/ajce/mca/rmca$ mv *.txt a
+student@S30:~/ajce/mca/rmca$ ls
+a
+student@S30:~/ajce/mca/rmca$ mv a b
+student@S30:~/ajce/mca/rmca$ ls
+b  f1.txt  f2.txt  f3.txt  f4.txt  f5.txt  f6.txt
+student@S30:~/ajce/mca/rmca$ mv -i f1.txt f2.txt
+mv: overwrite 'f2.txt'? n
+student@S30:~/ajce/mca/rmca$ cat f2.txt
+1
+2
+
+3
+
+
+
+
+4
+
+
+
+5
+
+
+6
+student@S30:~/ajce/mca/rmca$ mv -i f5.txt f2.txt
+mv: overwrite 'f2.txt'? n   
+student@S30:~/ajce/mca/rmca$ cat f2.txt
+1
+2
+
+3
+
+
+
+
+4
+
+
+
+5
+
+
+6
+student@S30:~/ajce/mca/rmca$ mv -i f5.txt f2.txt
+mv: overwrite 'f2.txt'? y
+student@S30:~/ajce/mca/rmca$ cat f2.txt
+How old are you
+student@S30:~/ajce/mca/rmca$ mv -b f2.txt f4.txt
+student@S30:~/ajce/mca/rmca$ cat f4.txt
+How old are you
+student@S30:~/ajce/mca/rmca$ ls
+b  f1.txt  f3.txt  f4.txt  f4.txt~  f6.txt
+student@S30:~/ajce/mca/rmca$ cat -n f4.txt
+     1	How old are you
+student@S30:~/ajce/mca/rmca$ cat -n f1.txt
+     1	1
+     2	2
+     3	
+     4	3
+     5	
+     6	
+     7	
+     8	
+     9	4
+    10	
+    11	
+    12	
+    13	5
+    14	
+    15	
+    16	6
+student@S30:~/ajce/mca/rmca$ cat -s f1.txt
+1
+2
+
+3
+
+4
+
+5
+
+6
+student@S30:~/ajce/mca/rmca$ -u f1.txt
+-u: command not found
+student@S30:~/ajce/mca/rmca$ cd ..
+student@S30:~/ajce/mca$ cd lmca
+student@S30:~/ajce/mca/lmca$ touch f1.txt
+student@S30:~/ajce/mca/lmca$ touch f2.txt
+student@S30:~/ajce/mca/lmca$ cd ..
+student@S30:~/ajce/mca$ ls
+imca  lmca  rmca
+student@S30:~/ajce/mca$ mv -u rmca lmca
+student@S30:~/ajce/mca$ ls
+imca  lmca
+student@S30:~/ajce/mca$ mv -u lmca rmca
+student@S30:~/ajce/mca$ man cat
+student@S30:~/ajce/mca$ mv -u imca rmca
+student@S30:~/ajce/mca$ ls
+rmca
+student@S30:~/ajce/mca$ man cat
+student@S30:~/ajce/mca$ 
+

@@ -1,0 +1,65 @@
+student@T38:~$ chmod +x p26.sh
+student@T38:~$ ./p26.sh
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+student@T38:~$ chmod +x p27.sh
+student@T38:~$ ./p27.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+student@T38:~$ chmod +x p28.sh
+student@T38:~$ ./p28.sh
+Adding 1 into sum
+Adding 2 into sum
+Adding 3 into sum
+Adding 4 into sum
+Adding 5 into sum
+Adding 6 into sum
+Adding 7 into sum
+Adding 8 into sum
+Adding 9 into sum
+Adding 10 into sum
+the sum is 55
+student@T38:~$ chmod +x p29.sh
+student@T38:~$ ./p29.sh
+enter the range
+10
+ Primenumber between 1 to 10 is:
+1
+2
+3
+5
+7
+student@T38:~$ ./p30.sh
+enter a number
+10
+25
+student@T38:~$ ./p33.sh
+enter a range
+10
+1
+2
+3
+5
+7
+student@T38:~$ ./p34.sh
+enter a number
+12
+479001600
+student@T38:~$ 
+

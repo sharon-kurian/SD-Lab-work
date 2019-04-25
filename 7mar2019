@@ -1,0 +1,258 @@
+student@T38:~$ cd home
+bash: cd: home: No such file or directory
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ grep "flower"f1.txt
+flower
+^C
+
+student@T38:~/ajce/mca$ grep "flower"f1
+^C
+student@T38:~/ajce/mca$ grep "flower" f1.txt
+Flowers are the reproductive parts of flowering plants. 
+A flower is a special part of the plant.
+Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+There are many different kinds of flowers in different areas in the world. 
+Even in the coldest places, for example the Arctic, flowers can grow during a few months. 
+student@T38:~/ajce/mca$ grep "flower" f1.txtf2.txt
+grep: f1.txtf2.txt: No such file or directory
+student@T38:~/ajce/mca$ grep "flower" f1.txt f2.txt
+f1.txt:Flowers are the reproductive parts of flowering plants. 
+f1.txt:A flower is a special part of the plant.
+f1.txt:Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+f1.txt:In all plants, a flower is usually its most colourful part.
+f1.txt:We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+f1.txt:There are many different kinds of flowers in different areas in the world. 
+f1.txt:Even in the coldest places, for example the Arctic, flowers can grow during a few months. 
+student@T38:~/ajce/mca$ grep "flower" f2.txt f1.txt
+f1.txt:Flowers are the reproductive parts of flowering plants. 
+f1.txt:A flower is a special part of the plant.
+f1.txt:Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+f1.txt:In all plants, a flower is usually its most colourful part.
+f1.txt:We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+f1.txt:There are many different kinds of flowers in different areas in the world. 
+f1.txt:Even in the coldest places, for example the Arctic, flowers can grow during a few months. 
+student@T38:~/ajce/mca$ grep "flower" f2.txt
+student@T38:~/ajce/mca$ grep "flower" f2.txt
+student@T38:~/ajce/mca$ grep "flower" f2.txt
+Flowers are an important evolutionary advance made by flowering plants.
+ Some flowers are dependent upon the wind to move pollen between flowers of the same species.
+ The role of flowers is to produce seeds, which are contained in fruit. 
+student@T38:~/ajce/mca$ grep "flower" f2.txtf1.txt
+grep: f2.txtf1.txt: No such file or directory
+student@T38:~/ajce/mca$ grep "flower" f2.txt f1.txt
+f2.txt:Flowers are an important evolutionary advance made by flowering plants.
+f2.txt: Some flowers are dependent upon the wind to move pollen between flowers of the same species.
+f2.txt: The role of flowers is to produce seeds, which are contained in fruit. 
+f1.txt:Flowers are the reproductive parts of flowering plants. 
+f1.txt:A flower is a special part of the plant.
+f1.txt:Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+f1.txt:In all plants, a flower is usually its most colourful part.
+f1.txt:We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+f1.txt:There are many different kinds of flowers in different areas in the world. 
+f1.txt:Even in the coldest places, for example the Arctic, flowers can grow during a few months. 
+student@T38:~/ajce/mca$ grep -i "PLANT" f1.txt
+Flowers are the reproductive parts of flowering plants. 
+A flower is a special part of the PLANT.
+Flowers are also called the bloom or blossom of a plant. 
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+student@T38:~/ajce/mca$ egrep -w "petals|seeds" f1.txt f2.txt
+f1.txt:Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+f2.txt: The role of flowers is to produce seeds, which are contained in fruit. 
+f2.txt:Fruits and seeds are a means of dispersal.
+student@T38:~/ajce/mca$ grep * f1.txt
+grep: imca: Is a directory
+grep: lmca: Is a directory
+grep: rmca: Is a directory
+student@T38:~/ajce/mca$ grep -w "plant"f1.txt
+^C  
+student@T38:~/ajce/mca$ grep -w "plant" f1.txt
+Flowers are also called the bloom or blossom of a plant. 
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+student@T38:~/ajce/mca$ grep -B2 "seeds" f1.txt
+A flower is a special part of the PLANT.
+Flowers are also called the bloom or blossom of a plant. 
+Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+student@T38:~/ajce/mca$ grep -A3 "seeds" f1.txt
+Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+There are many different kinds of flowers in different areas in the world. 
+student@T38:~/ajce/mca$ grep -v "seeds" f1.txt
+Flowers are the reproductive parts of flowering plants. 
+A flower is a special part of the PLANT.
+Flowers are also called the bloom or blossom of a plant. 
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+There are many different kinds of flowers in different areas in the world. 
+Even in the coldest places, for example the Arctic, flowers can grow during a few months. *****
+student@T38:~/ajce/mca$ grep -c "seeds" f1.txt
+1
+student@T38:~/ajce/mca$ grep -n "seeds" f1.txt
+4:Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+student@T38:~/ajce/mca$ grep  "^seeds" f1.txt
+student@T38:~/ajce/mca$ grep  "^flowers" f1.txt
+student@T38:~/ajce/mca$ grep  "^Flowers" f1.txt
+Flowers are the reproductive parts of flowering plants. 
+Flowers are also called the bloom or blossom of a plant. 
+Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+student@T38:~/ajce/mca$ grep  "seed$" f1.txt
+student@T38:~/ajce/mca$ grep  "plant$" f1.txt
+student@T38:~/ajce/mca$ grep  "Flowers$" f1.txt
+student@T38:~/ajce/mca$ grep  "Flowers $" f1.txt
+student@T38:~/ajce/mca$ grep  "is *" f1.txt
+A flower is a special part of the PLANT.
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+student@T38:~/ajce/mca$ grep  "os$" f1.txt
+student@T38:~/ajce/mca$ grep  "rs$" f1.txt
+student@T38:~/ajce/mca$ grep -l "flower" *
+f1.txt
+f2.txt
+grep: imca: Is a directory
+grep: lmca: Is a directory
+grep: rmca: Is a directory
+student@T38:~/ajce/mca$ grep -l "flower"*
+^C
+student@T38:~/ajce/mca$ grep -l "flower"* f1.txt
+f1.txt
+student@T38:~/ajce/mca$ grep "out$" f1.txt
+student@T38:~/ajce/mca$ grep "ut$" f1.txt
+student@T38:~/ajce/mca$ grep "ut $" f1.txt
+student@T38:~/ajce/mca$ grep "t$" f1.txt
+student@T38:~/ajce/mca$ grep "t$"f1.txt
+^C
+student@T38:~/ajce/mca$ grep "t$" f1.txt
+student@T38:~/ajce/mca$ grep-l "flower"*
+grep-l: command not found
+student@T38:~/ajce/mca$ grep -l "flower"*
+^C
+student@T38:~/ajce/mca$ grep -l "flower" *
+f1.txt
+f2.txt
+grep: imca: Is a directory
+grep: lmca: Is a directory
+grep: rmca: Is a directory
+student@T38:~/ajce/mca$ grep "r$" f1.txt
+student@T38:~/ajce/mca$ man grep
+student@T38:~/ajce/mca$ cat f1.txt
+Flowers are the reproductive parts of flowering plants. 
+A flower is a special part of the PLANT.
+Flowers are also called the bloom or blossom of a plant. 
+Flowers have petals. Inside the part of the flower that has petals are the parts which produce pollen and seeds.
+In all plants, a flower is usually its most colourful part.
+We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. 
+There are many different kinds of flowers in different areas in the world. 
+Even in the coldest places, for example the Arctic, flowers can grow during a few months. *****
+student@T38:~/ajce/mca$ grep "t$" f1.txt
+student@T38:~/ajce/mca$ cat  f2.txt
+Flowers are an important evolutionary advance made by flowering plants.
+ Some flowers are dependent upon the wind to move pollen between flowers of the same species.
+ Their pollen grains are light-weight. Many others rely on insects or birds to move pollen.
+ Theirs are heavier.
+ The role of flowers is to produce seeds, which are contained in fruit. 
+Fruits and seeds are a means of dispersal.
+ Plants do not move, but wind, animals and birds spread the plants across the landscape.
+
+
+student@T38:~/ajce/mca$ cat >f7.txt
+ggsjjhdggl
+ghjkdl
+ghddyl
+hhj
+hghdjl
+^C
+student@T38:~/ajce/mca$ grep "l$" f7.txt
+ggsjjhdggl
+ghjkdl
+ghddyl
+hghdjl
+student@T38:~/ajce/mca$ grep -o"flower" f7.txt
+grep: lower: No such file or directory
+student@T38:~/ajce/mca$ grep -o"flower" f1.txt
+grep: lower: No such file or directory
+student@T38:~/ajce/mca$ grep -o "flower" f1.txt
+flower
+flower
+flower
+flower
+flower
+flower
+flower
+flower
+flower
+student@T38:~/ajce/mca$ grep "e$" f7.txt
+student@T38:~/ajce/mca$ grep "e$" f2.txt
+student@T38:~/ajce/mca$ grep "g$" f7.txt
+student@T38:~/ajce/mca$ grep "l$" f7.txt
+ggsjjhdggl
+ghjkdl
+ghddyl
+hghdjl
+student@T38:~/ajce/mca$ cat >f3.txt
+hai welcome to AJCE
+Hope you all are going well
+how was your exams
+^C
+student@T38:~/ajce/mca$ grep "to" f3.txt
+hai welcome to AJCE
+student@T38:~/ajce/mca$ cat>f4.txt
+Hai this is our class
+we all are like a family
+we are now 42
+^C
+student@T38:~/ajce/mca$ grep "is" f3.txt f4.txt
+f4.txt:Hai this is our class
+student@T38:~/ajce/mca$ grep "all" f3.txt f4.txt
+f3.txt:Hope you all are going well
+f4.txt:we all are like a family
+student@T38:~/ajce/mca$ grep -i "AJCE" f3.txt
+hai welcome to AJCE
+student@T38:~/ajce/mca$ grep -w 'well|family" f3.txt f4.txt
+> ^C
+student@T38:~/ajce/mca$ grep -w "well|family" f3.txt f4.txt
+student@T38:~/ajce/mca$ grep -w "well" f3.txt 
+Hope you all are going well
+student@T38:~/ajce/mca$ grep -c "well" f3.txt 
+1
+student@T38:~/ajce/mca$ grep -l "AJCE" *
+f3.txt
+grep: imca: Is a directory
+grep: lmca: Is a directory
+grep: rmca: Is a directory
+student@T38:~/ajce/mca$ grep -l "AJCE"*
+^C
+student@T38:~/ajce/mca$ grep -l "well"*
+^C
+student@T38:~/ajce/mca$ grep -l "well" *
+f3.txt
+grep: imca: Is a directory
+grep: lmca: Is a directory
+grep: rmca: Is a directory
+student@T38:~/ajce/mca$ grep -o "well" f1.txt
+student@T38:~/ajce/mca$ grep -o "exam" f1.txt
+exam
+student@T38:~/ajce/mca$ grep -n "exam" f1.txt
+8:Even in the coldest places, for example the Arctic, flowers can grow during a few months. *****
+student@T38:~/ajce/mca$ grep  "exam" f4.txt
+student@T38:~/ajce/mca$ grep  "exam" f3.txt
+how was your exams
+student@T38:~/ajce/mca$ grep  "^how" f3.txt
+how was your exams
+student@T38:~/ajce/mca$ grep "s$" f3.txt
+how was your exams
+student@T38:~/ajce/mca$ grep -A3 "to" f3.txt
+hai welcome to AJCE
+Hope you all are going well
+how was your exams
+student@T38:~/ajce/mca$ grep -B2 "was" f3.txt
+hai welcome to AJCE
+Hope you all are going well
+how was your exams
+student@T38:~/ajce/mca$ grep "was" *.txt
+f3.txt:how was your exams
+student@T38:~/ajce/mca$ 
+

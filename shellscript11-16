@@ -1,0 +1,80 @@
+student@T38:~gedit p10.sh
+student@T38:~$ chmod +x p10.sh
+student@T38:~$ ./p10.sh
+enter a number:2
+positive
+student@T38:~$ ./p10.sh
+enter a number:-1
+negative
+student@T38:~$ ./p10.sh
+enter a number:0
+zero
+student@T38:~$ chmod +x p11.sh
+student@T38:~$ ./p11.sh
+Typed argument is neither monday nor tuesday
+student@T38:~$ ./p11.sh Monday
+The typed argument is Monday
+student@T38:~$ ./p11.sh Tuesday
+The typed argument is Tuesday
+student@T38:~$ chmod +p12.sh
+chmod: missing operand after ‘+p12.sh’
+Try 'chmod --help' for more information.
+student@T38:~$ chmod +x p12.sh
+student@T38:~$ ./p12.sh
+ 3 times 5 is 15 
+ 2 times 5 is 10 
+ 5 times 5 is 25 
+ 7 times 5 is 35 
+student@T38:~$ chmod +p13.sh
+chmod: missing operand after ‘+p13.sh’
+Try 'chmod --help' for more information.
+student@T38:~$ chmod +x p13.sh
+student@T38:~$ ./p13.sh
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+student@T38:~$ ./p14.sh
+welcome 0 times
+welcome 2 times
+welcome 4 times
+welcome 6 times
+welcome 8 times
+welcome 10 times
+student@T38:~$ ./p15.sh
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+student@T38:~$ ./p16.sh
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+infinite loops [ hit CTRL+C to stop]
+

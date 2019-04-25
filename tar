@@ -1,0 +1,154 @@
+student@T38:~$ cd123
+cd123: command not found
+student@T38:~$ cd 123
+student@T38:~/123$ cd ..
+student@T38:~$ cd 123
+student@T38:~/123$ cat>f1.txt
+qwe
+rt
+^C
+student@T38:~/123$ 
+student@T38:~/123$ cat>f2.txt
+123
+456
+^C
+student@T38:~/123$ cat>f3.txt
+mnmo;l
+cxvbgfdv
+^C
+student@T38:~/123$ tar -czvf a.tar.gz 123
+tar: 123: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+student@T38:~/123$ tar -xzvf a.tar.gz
+student@T38:~/123$ cd /
+student@T38:/$ tar -xzvf a.tar.gz
+tar (child): a.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+student@T38:/$ ls
+bin    etc             lib         mnt   run   stage2.img  var
+boot   home            lib64       opt   sbin  sys         vmlinuz
+cdrom  initrd.img      lost+found  proc  snap  tmp         vmlinuz.old
+dev    initrd.img.old  media       root  srv   usr
+student@T38:/$ cd 123
+bash: cd: 123: No such file or directory
+student@T38:/$ cd ~
+student@T38:~$ cd 123
+student@T38:~/123$ ls
+a.tar.gz
+student@T38:~/123$ tar -xzvf a.tar.gz
+student@T38:~/123$ ls
+a.tar.gz
+student@T38:~/123$ ls
+a.tar.gz
+student@T38:~/123$ cd ..
+student@T38:~$ ls
+ 123      Desktop            file1      prime.sh                  snap
+ 8-3-19   Documents          Lolek      Public                    Templates
+ abc      Downloads          Music     'redirecting and piping'   Videos
+ ajce     examples.desktop   Pictures   rini                      while.sh
+ clg      fibonacci.sh       prgm5      Rini
+student@T38:~$ tar -czvf a.tar.gz ajce
+ajce/
+ajce/a.php
+ajce/mca/
+ajce/mca/lmca/
+ajce/mca/lmca/h/
+ajce/mca/lmca/h/file2.txt
+ajce/mca/lmca/s/
+ajce/mca/lmca/s/file1.txt
+ajce/mca/lmca/a/
+ajce/mca/rmca/
+ajce/mca/rmca/f3.txt~
+ajce/mca/rmca/a/
+ajce/mca/rmca/a/f2.txt
+ajce/mca/rmca/a/f3.txt
+ajce/mca/rmca/a/f4.txt
+ajce/mca/rmca/a/f1.txt
+ajce/mca/rmca/f2.txt
+ajce/mca/rmca/f3.txt
+ajce/mca/rmca/b/
+ajce/mca/rmca/b/a2.txt
+ajce/mca/rmca/b/a1.txt
+ajce/mca/rmca/b/a/
+ajce/mca/rmca/b/a/f2.txt
+ajce/mca/rmca/b/a/f3.txt
+ajce/mca/rmca/b/a/f4.txt
+ajce/mca/rmca/b/a/f1.txt
+ajce/mca/rmca/f1.txt
+ajce/mca/imca/
+ajce/mca/12/
+ajce/mca/12/f13.txt
+ajce/mca/12/f12.txt
+ajce/mca/12/f11.txt
+ajce/mca/f2.txt
+ajce/mca/f3.txt
+ajce/mca/f4.txt
+ajce/mca/f7.txt
+ajce/mca/f1.txt
+ajce/a/
+ajce/a/f11.txt
+ajce/a/f1.txt
+ajce/f2.txt
+ajce/f3.txt
+ajce/b/
+ajce/f1.txt
+student@T38:~$ ls
+ 123        Documents          Pictures                  snap
+ 8-3-19     Downloads          prgm5                     Templates
+ abc        examples.desktop   prime.sh                  Videos
+ ajce       fibonacci.sh       Public                    while.sh
+ a.tar.gz   file1             'redirecting and piping'
+ clg        Lolek              rini
+ Desktop    Music              Rini
+student@T38:~$ cd sharon
+'student@T38:~/sharon$ tar -xzvf a.tar.gz
+ajce/
+ajce/a.php
+ajce/mca/
+ajce/mca/lmca/
+ajce/mca/lmca/h/
+ajce/mca/lmca/h/file2.txt
+ajce/mca/lmca/s/
+ajce/mca/lmca/s/file1.txt
+ajce/mca/lmca/a/
+ajce/mca/rmca/
+ajce/mca/rmca/f3.txt~
+ajce/mca/rmca/a/
+ajce/mca/rmca/a/f2.txt
+ajce/mca/rmca/a/f3.txt
+ajce/mca/rmca/a/f4.txt
+ajce/mca/rmca/a/f1.txt
+ajce/mca/rmca/f2.txt
+ajce/mca/rmca/f3.txt
+ajce/mca/rmca/b/
+ajce/mca/rmca/b/a2.txt
+ajce/mca/rmca/b/a1.txt
+ajce/mca/rmca/b/a/
+ajce/mca/rmca/b/a/f2.txt
+ajce/mca/rmca/b/a/f3.txt
+ajce/mca/rmca/b/a/f4.txt
+ajce/mca/rmca/b/a/f1.txt
+ajce/mca/rmca/f1.txt
+ajce/mca/imca/
+ajce/mca/12/
+ajce/mca/12/f13.txt
+ajce/mca/12/f12.txt
+ajce/mca/12/f11.txt
+ajce/mca/f2.txt
+ajce/mca/f3.txt
+ajce/mca/f4.txt
+ajce/mca/f7.txt
+ajce/mca/f1.txt
+ajce/a/
+ajce/a/f11.txt
+ajce/a/f1.txt
+ajce/f2.txt
+ajce/f3.txt
+ajce/b/
+ajce/f1.txt
+student@T38:~/sharon$ ls
+ajce  a.tar.gz
+student@T38:~/sharon$ 
+

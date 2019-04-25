@@ -1,0 +1,74 @@
+student@T38:~/clg$ expr 12 + 8
+20
+student@T38:~/clg$ expr 12 \ 8
+expr: syntax error
+student@T38:~/clg$ expr 12 \* 2
+24
+student@T38:~/clg$ echo "enter 2 no"
+enter 2 no
+student@T38:~/clg$ read x
+read y
+student@T38:~/clg$ y=1=
+student@T38:~/clg$ expr 12 - 2
+10
+student@T38:~/clg$ expr 12 / 2
+6
+student@T38:~/clg$ y=10
+student@T38:~/clg$ y= 'expr $y + 1'
+expr $y + 1: command not found
+student@T38:~/clg$ y = 'expr $y + 1'
+y: command not found
+student@T38:~/clg$ y = 10
+y: command not found
+student@T38:~/clg$ y=10
+student@T38:~/clg$ y=`expr $y + 1`
+student@T38:~/clg$ echo $y
+11
+student@T38:~/clg$ read x
+10
+student@T38:~/clg$ read y
+20
+student@T38:~/clg$ sum=`expr $x + $y`
+student@T38:~/clg$ echo $sum
+30
+student@T38:~/clg$ read x
+2
+student@T38:~/clg$ read y
+3
+student@T38:~/clg$ res=`expr $x = $y`
+student@T38:~/clg$ echo $res
+0
+student@T38:~/clg$ y=10
+student@T38:~/clg$ res=`expr $x = $y`
+student@T38:~/clg$ echo $res
+1
+student@T38:~/clg$ x=sharon
+student@T38:~/clg$ len=`expr length $x`
+student@T38:~/clg$ echo $len
+6
+student@T38:~/clg$ expr --version
+expr (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Parker, James Youngman, and Paul Eggert.
+student@T38:~/clg$ x=geeks
+student@T38:~/clg$ sub=`expr substr $x 2 3`
+student@T38:~/clg$ echo $sub
+eek
+student@T38:~/clg$ expr geeks : geek
+4
+student@T38:~/clg$ expr geeks : geeks
+5
+student@T38:~/clg$ expr length "geekss" "<" 5 "&" 19 - 6 ">" 10
+0
+student@T38:~/clg$ expr length "geekss" "<" 7 "&" 19 - 6 ">" 10
+1
+student@T38:~/clg$ expr length "geekss" "<" 7 "|" 19 - 6 ">" 10
+1
+student@T38:~/clg$ expr length "geekss" "<" 5 "|" 19 - 6 ">" 10
+1
+student@T38:~/clg$ 
+

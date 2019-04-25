@@ -1,0 +1,90 @@
+student@T38:~$ vi sharon.sh
+student@T38:~$ chmod +x sharon.sh
+student@T38:~$ ./sharon.sh
+./sharon.sh: line 1: i: command not found
+hello
+student@T38:~$ gedit shalu.sh
+student@T38:~$ gedit shalu.sh
+student@T38:~$ chmod +x shalu.sh
+student@T38:~$ ./shalu.sh
+welcome
+student@T38:~$ gedit p1.sh
+student@T38:~$ gedit p1.sh
+student@T38:~$ chmod +x p1.sh
+student@T38:~$ ./p1.sh
+hello world
+The date today is Thu Mar 21 14:29:37 IST 2019
+the current directory is /home/student
+student@T38:~$ gedit p2sh
+student@T38:~$ chmod +x p2.sh
+chmod: cannot access 'p2.sh': No such file or directory
+student@T38:~$ gedit p2.sh
+student@T38:~$ chmod +x p2.sh
+student@T38:~$ ./p2.sh
+value of var is test string
+student@T38:~$ gedit p3.sh
+student@T38:~$ chmod +x p3.sh
+student@T38:~$ ./p3.sh
+The value of var is $var
+student@T38:~$ gedit p4.sh
+student@T38:~$ chmod +x p4.sh
+student@T38:~$ ./p4.sh a c v b
+The command is ./p4.sh
+The command is a
+The command is c
+The command is v
+The command is b
+student@T38:~$ gedit p5.sh
+student@T38:~$ chmod +x p5.sh
+student@T38:~$ ./p5.sh 1 2 33 44 
+the command is 4
+the command is 1 2 33 44
+the command is 1 2 33 44
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+36
+student@T38:~$ gedit p6.sh
+student@T38:~$ chmod +x p6.sh
+student@T38:~$ ./p6.sh
+./p6.sh: line 1: unset: `x=36': not a valid identifier
+
+student@T38:~$ gedit p7.sh
+student@T38:~$ chmod +x p7.sh
+student@T38:~$ ./p7.sh
+5 + 10 = 15
+student@T38:~$ gedit p8.sh
+student@T38:~$ chmod +x p8.sh
+student@T38:~$ ./p8.sh
+./p8.sh: line 3: unexpected EOF while looking for matching `"'
+./p8.sh: line 5: syntax error: unexpected end of file
+student@T38:~$ gedit p8.sh
+student@T38:~$ chmod +x p8.sh
+student@T38:~$ ./p8.sh
+Enter 2 numbers:2 3
+2 + 3 = 5
+student@T38:~$ gedit p9.sh
+student@T38:~$ chmod +x p9.sh
+student@T38:~$ ./p9.sh
+Sum is 37
+student@T38:~$ 
+

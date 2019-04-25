@@ -1,0 +1,25 @@
+							server program
+student@S14:~$ javac Server3.java
+student@S14:~$ java Server3
+Client:-haiii
+Client:-hlooooo
+Client:-how are you????
+
+							client
+student@S14:~$ javac udpBaseClient_2.java 
+student@S14:~$ java udpBaseClient_2
+haiii
+hlooooo
+how are you????
+
+
+
+
+
+
+
+
+
+
+
+

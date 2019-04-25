@@ -1,0 +1,210 @@
+student@T38:~/ajce$ find ..
+../.local/share/app-info/xmls
+../.local/share/app-info/xmls/extensions-web.xml
+../.local/share/evolution
+../.local/share/evolution/memos
+../.local/share/evolution/memos/trash
+../.local/share/evolution/calendar
+../.local/share/evolution/calendar/trash
+../.local/share/evolution/calendar/system
+../.local/share/evolution/calendar/system/calendar.ics
+../.local/share/evolution/addressbook
+../.local/share/evolution/addressbook/trash
+../.local/share/evolution/addressbook/system
+../.local/share/evolution/addressbook/system/contacts.db
+../.local/share/evolution/addressbook/system/photos
+../.local/share/evolution/mail
+../.local/share/evolution/mail/trash
+../.local/share/evolution/tasks
+../.local/share/evolution/tasks/trash
+../.local/share/codeblocks
+../.local/share/codeblocks/plugins
+../.local/share/codeblocks/scripts
+../.local/share/nano
+../.local/share/grilo-plugins
+
+/home/student/ajce/mca/f1.txt
+/home/student/ajce/a/f1.txt
+/home/student/ajce/f1.txt
+/home/student/.local/share/Trash/files/a/f1.txt
+/home/student/.local/share/Trash/files/f1.txt
+find: ‘/home/android/.ssh’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Login/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/App2/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication4/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Dani/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/calc/app/build/generated/source/r/debug/in’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/ListViewsha/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication5/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Addition/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyFirstApp/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Atmlive/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/ImplicitSha/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Calculator3/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication3/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication2/app/build/generated/source/r/debug/in’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/sql/app/build/generated/source/r/debug/in’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/atmlivee/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Calculator2/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Loginsha/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/calcu/app/build/generated/source/r/debug/in’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/addno/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/lii/app/build/generated/source/r/debug/in’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication6/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/MyApplication/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Implicit/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/AndroidStudioProjects/Prgm10/app/build/generated/source/r/debug/com’: Permission denied
+find: ‘/home/android/.java/.userPrefs’: Permission denied
+find: ‘/home/android/.cache’: Permission denied
+find: ‘/home/android/.config’: Permission denied
+find: ‘/home/android/.mozilla’: Permission denied
+find: ‘/home/android/.gnupg’: Permission denied
+find: ‘/home/android/.local’: Permission denied
+find: ‘/home/android/.thunderbird’: Permission denied
+find: ‘/home/android/.gradle/daemon/4.4’: Permission denied
+find: ‘/home/android/.gnome’: Permission denied
+
+
+
+
+student@T38:~/ajce$ find ~
+ocal/share/evolution/addressbook
+/home/student/.local/share/evolution/addressbook/trash
+/home/student/.local/share/evolution/addressbook/system
+/home/student/.local/share/evolution/addressbook/system/contacts.db
+/home/student/.local/share/evolution/addressbook/system/photos
+/home/student/.local/share/evolution/mail
+/home/student/.local/share/evolution/mail/trash
+/home/student/.local/share/evolution/tasks
+/home/student/.local/share/evolution/tasks/trash
+/home/student/.local/share/codeblocks
+/home/student/.local/share/codeblocks/plugins
+/home/student/.local/share/codeblocks/scripts
+/home/student/.local/share/nano
+/home/student/.local/share/grilo-plugins
+/home/student/.local/share/grilo-plugins/grl-thetvdb.db
+/home/student/.local/share/grilo-plugins/grl-bookmarks.db
+/home/student/.local/share/grilo-plugins/grl-metadata-store.db
+/home/student/Documents
+/home/student/prime.sh
+/home/student/Videos
+/home/student/redirecting and piping
+/home/student/.bash_history
+student@T38:~/ajce$ 
+
+student@T38:~/ajce$ find ./mca -name f1.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f1.txt
+student@T38:~/ajce$ find ./mca -name "*.txt"
+./mca/lmca/h/file2.txt
+./mca/lmca/s/file1.txt
+./mca/rmca/a/f2.txt
+./mca/rmca/a/f3.txt
+./mca/rmca/a/f4.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/f2.txt
+./mca/rmca/f3.txt
+./mca/rmca/b/a2.txt
+./mca/rmca/b/a1.txt
+./mca/rmca/b/a/f2.txt
+./mca/rmca/b/a/f3.txt
+./mca/rmca/b/a/f4.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f2.txt
+./mca/f3.txt
+./mca/f4.txt
+./mca/f7.txt
+./mca/f1.txt
+student@T38:~/ajce$ find .type f -name "(.php"
+find: ‘.type’: No such file or directory
+find: ‘f’: No such file or directory
+student@T38:~/ajce$ find ./mca -name f1.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f1.txt
+student@T38:~/ajce$ find ./mca -name "*.txt"
+./mca/lmca/h/file2.txt
+./mca/lmca/s/file1.txt
+./mca/rmca/a/f2.txt
+./mca/rmca/a/f3.txt
+./mca/rmca/a/f4.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/f2.txt
+./mca/rmca/f3.txt
+./mca/rmca/b/a2.txt
+./mca/rmca/b/a1.txt
+./mca/rmca/b/a/f2.txt
+./mca/rmca/b/a/f3.txt
+./mca/rmca/b/a/f4.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f2.txt
+./mca/f3.txt
+./mca/f4.txt
+./mca/f7.txt
+./mca/f1.txt
+student@T38:~/ajce$ find ./a -empty
+./a/f11.txt
+./a/f1.txt
+student@T38:~/ajce$ find ./mca -empty
+./mca/lmca/a
+student@T38:~/ajce$ find ./mca -name f1.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f1.txt
+student@T38:~/ajce$ find ./mca -name "*.txt"
+./mca/lmca/h/file2.txt
+./mca/lmca/s/file1.txt
+./mca/rmca/a/f2.txt
+./mca/rmca/a/f3.txt
+./mca/rmca/a/f4.txt
+./mca/rmca/a/f1.txt
+./mca/rmca/f2.txt
+./mca/rmca/f3.txt
+./mca/rmca/b/a2.txt
+./mca/rmca/b/a1.txt
+./mca/rmca/b/a/f2.txt
+./mca/rmca/b/a/f3.txt
+./mca/rmca/b/a/f4.txt
+./mca/rmca/b/a/f1.txt
+./mca/rmca/f1.txt
+./mca/f2.txt
+./mca/f3.txt
+./mca/f4.txt
+./mca/f7.txt
+./mca/f1.txt
+student@T38:~/ajce$ find ./a -empty
+./a/f11.txt
+./a/f1.txt
+student@T38:~/ajce$ find ./mca -empty
+./mca/lmca/a
+student@T38:~/ajce$ find /-type d -name a
+find: ‘/-type’: No such file or directory
+find: ‘d’: No such file or directory
+student@T38:~/ajce$ find /home -iname f1.txt
+find: ‘/home/mca/.ssh’: Permission denied
+find: ‘/home/mca/.java/.userPrefs’: Permission denied
+find: ‘/home/mca/.cache’: Permission denied
+find: ‘/home/mca/.dbus’: Permission denied
+find: ‘/home/mca/.config’: Permission denied
+find: ‘/home/mca/.mozilla’: Permission denied
+find: ‘/home/mca/.gnupg’: Permission denied
+find: ‘/home/mca/.local’: Permission denied
+/home/student/clg/shalu/a/f1.txt
+/home/student/clg/shalu/f1.txt
+/home/student/ajce/mca/rmca/a/f1.txt
+/home/student/ajce/mca/rmca/b/a/f1.txt
+/home/student/ajce/mca/rmca/f1.txt
+student@T38:~/ajce$ find ~ -name mca
+/home/student/ajce/mca
+student@T38:~/ajce$ find ~ -name mca
+/home/student/ajce/mca
+
+student@T38:~/ajce$ 
+
+

@@ -1,0 +1,74 @@
+student@T38:~$ ls
+abc   clg      Documents  examples.desktop  Music     Public  Templates
+ajce  Desktop  Downloads  file1             Pictures  Rini    Videos
+student@T38:~$ cd clg
+student@T38:~/clg$ cd shalu
+student@T38:~/clg/shalu$ pwd
+/home/student/clg/shalu
+student@T38:~/clg/shalu$ cd ..
+student@T38:~/clg$ cd ..
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ ls
+imca  lmca  rmca
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ ls
+a  b  f1.txt  f2.txt  f3.txt  f3.txt~
+student@T38:~/ajce/mca/rmca$ cp f2.txt /home/student/clg/shalu/
+student@T38:~/ajce/mca/rmca$ ls
+a  b  f1.txt  f2.txt  f3.txt  f3.txt~
+student@T38:~/ajce/mca/rmca$ cp -R a /home/student/clg/shalu
+student@T38:~/ajce/mca/rmca$ ls shalu
+ls: cannot access 'shalu': No such file or directory
+student@T38:~/ajce/mca/rmca$ cd ..
+student@T38:~/ajce/mca$ cd ..
+student@T38:~/ajce$ cd ..
+student@T38:~$ cd clg
+student@T38:~/clg$ cd shalu
+student@T38:~/clg/shalu$ ls
+a  f2.txt  sharon.txt
+student@T38:~/clg/shalu$ cd ..
+student@T38:~/clg$ cd ..
+student@T38:~$ cd ajce
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ cd lmca
+student@T38:~/ajce/mca/lmca$ cd ..
+student@T38:~/ajce/mca$ cd imca
+student@T38:~/ajce/mca/imca$ ls
+i1.txt  i2.txt  i2.txt~  i3.txt
+student@T38:~/ajce/mca/imca$ rm i1.txt
+student@T38:~/ajce/mca/imca$ ls
+i2.txt  i2.txt~  i3.txt
+student@T38:~/ajce/mca/imca$ ls
+i2.txt  i2.txt~  i3.txt  i4.txt  i5.txt  i6.txt
+student@T38:~/ajce/mca/imca$ rm i2.txt i3.txt
+student@T38:~/ajce/mca/imca$ ls
+i2.txt~  i4.txt  i5.txt  i6.txt
+student@T38:~/ajce/mca/imca$ ls -i i6.txt
+2637825 i6.txt
+student@T38:~/ajce/mca/imca$ rm -i i6.txt
+rm: remove regular file 'i6.txt'? y
+student@T38:~/ajce/mca/imca$ ls -l
+total 12
+-rw-r--r-- 1 student student 15 Feb 11 18:15 i2.txt~
+-rw-r--r-- 1 student student  4 Feb 11 18:30 i4.txt
+-rw-r--r-- 1 student student  4 Feb 11 18:30 i5.txt
+student@T38:~/ajce/mca/imca$ rm e.txt
+rm: cannot remove 'e.txt': No such file or directory
+student@T38:~/ajce/mca/imca$ rm i5.txt
+student@T38:~/ajce/mca/imca$ ls
+i2.txt~  i4.txt
+student@T38:~/ajce/mca/imca$ rm -f i2.txt
+student@T38:~/ajce/mca/imca$ ls
+i2.txt~  i4.txt
+student@T38:~/ajce/mca/imca$ rm -r*
+rm: invalid option -- '*'
+Try 'rm --help' for more information.
+student@T38:~/ajce/mca/imca$ rm *
+student@T38:~/ajce/mca/imca$ ls
+student@T38:~/ajce/mca/imca$ ls
+a  file2.txt
+student@T38:~/ajce/mca/imca$ rm -R a file2.txt
+student@T38:~/ajce/mca/imca$ ls
+student@T38:~/ajce/mca/imca$ 
+

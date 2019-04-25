@@ -1,0 +1,170 @@
+student@T38:~$ ./p19.sh
+ Enter a year
+2001
+Not Leap year
+student@T38:~$ ./p19.sh
+ Enter a year
+2004
+Leap year
+student@T38:~$ ./p18.sh
+enter a number
+2
+The number is even
+student@T38:~$ ./p17.sh
+enter a number
+2
+enter another number
+3
+3is greater
+student@T38:~$ ./p20.sh
+enter a character : w
+consonent
+student@T38:~$ ./p20.sh
+enter a character : a
+ Vowel
+student@T38:~$ ./p20.sh
+enter a character : 1
+not an alphabet
+student@T38:~$ ./p21.sh
+bash: ./p21.sh: Permission denied
+student@T38:~$ gedit p22.sh
+student@T38:~$ ./p22.sh
+bash: ./p22.sh: Permission denied
+student@T38:~$ chmod +x p22.sh
+student@T38:~$ ./p22.sh
+enter a  number
+2
+./p22.sh: line 3: syntax error near `i--)'
+./p22.sh: line 3: `for (( i=$n; i<=1; i--)'
+student@T38:~$ ./p22.sh
+enter a  number
+6
+./p22.sh: line 3: syntax error near `i--)'
+./p22.sh: line 3: `for (( i=$n; i<=1; i--)'
+student@T38:~$ ./p22.sh
+enter a  number
+6
+./p22.sh: line 3: syntax error near `i--)'
+./p22.sh: line 3: `for (( i=$n; i<=1; i--)'
+student@T38:~$ ./p22.sh
+enter a  number
+9
+./p22.sh: line 3: syntax error near `i--)'
+./p22.sh: line 3: `for (( i=$n; i<=1; i--)'
+student@T38:~$ ./p22.sh
+enter a  number
+6
+./p22.sh: line 3: syntax error near `i--)'
+./p22.sh: line 3: `for (( i=$n; i<=1; i--)'
+student@T38:~$ ./p21.sh
+bash: ./p21.sh: Permission denied
+student@T38:~$ chmod +x p21.sh
+student@T38:~$ ./p21.sh
+enter a  number
+5
+./p21.sh: line 4: syntax error near `)'
+./p21.sh: line 4: `for (( i=n; i>=1; i-- )'
+student@T38:~$ ./p21.sh
+enter a  number
+5
+./p21.sh: line 7: syntax error near unexpected token `fi'
+./p21.sh: line 7: `fi'
+student@T38:~$ ./p21.sh
+enter a  number
+5
+5
+4
+3
+2
+1
+student@T38:~$ gedit p23.sh
+student@T38:~$ gedit p23.sh
+student@T38:~$ chmod +x p23.sh
+student@T38:~$ ./p23.sh
+enter a  number
+6
+1 * 6 = 6
+2 * 6 = 12
+3 * 6 = 18
+4 * 6 = 24
+5 * 6 = 30
+6 * 6 = 36
+7 * 6 = 42
+8 * 6 = 48
+9 * 6 = 54
+10 * 6 = 60
+student@T38:~$ gedit p24.sh
+student@T38:~$ chmod +x p24.sh
+student@T38:~$ ./p24.sh
+enter a number
+4
+1
+2
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+3
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+4
+student@T38:~$ ./p24.sh
+enter a number
+5
+1
+2
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+3
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+4
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+./p24.sh: line 8: [: expr $i % $j-eq: unary operator expected
+5
+student@T38:~$ ./p24.sh
+enter a number
+8
+1
+2
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+3
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+4
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+5
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+6
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+7
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+./p24.sh: line 8: [: expr $i % $j: integer expression expected
+8
+student@T38:~$ ./p24.sh
+enter a number
+5
+1
+2
+./p24.sh: line 8: [expr $i % $j: command not found
+3
+./p24.sh: line 8: [expr $i % $j: command not found
+./p24.sh: line 8: [expr $i % $j: command not found
+4
+./p24.sh: line 8: [expr $i % $j: command not found
+./p24.sh: line 8: [expr $i % $j: command not found
+./p24.sh: line 8: [expr $i % $j: command not found
+5
+student@T38:~$ ^C
+student@T38:~$ 
+

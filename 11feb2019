@@ -1,0 +1,82 @@
+
+student@T38:~$ cd ajce
+student@T38:~/ajce$ mkdir mca
+student@T38:~/ajce$ cd mca
+student@T38:~/ajce/mca$ mkdir rmca
+student@T38:~/ajce/mca$ mkdir lmca
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ cat >f1.txt
+hloo
+welcome to ajce
+^C
+
+student@T38:~/ajce/mca/rmca$ cat >f2.txt
+nice to meet you
+student@T38:~/ajce/mca/rmca$ cat > f3.txt
+hope you are doing well
+student@T38:~/ajce/mca/rmca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T38:~/ajce/mca/rmca$ cd ..
+student@T38:~/ajce/mca$ cd lmca
+student@T38:~/ajce/mca/lmca$ cat > file1.txt
+name
+Address
+student@T38:~/ajce/mca/lmca$ cat > file2.txt
+occupation
+phone
+student@T38:~/ajce/mca/lmca$ cd ..
+student@T38:~/ajce/mca$ cd rmca
+student@T38:~/ajce/mca/rmca$ ls
+f1.txt  f2.txt  f3.txt
+student@T38:~/ajce/mca/rmca$ cp f1.txt f2.txt
+student@T38:~/ajce/mca/rmca$ ls
+f1.txt  f2.txt  f3.txt
+student@T38:~/ajce/mca/rmca$ cp f1.txt f4.txt
+student@T38:~/ajce/mca/rmca$ ls
+f1.txt  f2.txt  f3.txt  f4.txt
+student@T38:~/ajce/mca/rmca$ ls
+a  f1.txt  f2.txt  f3.txt  f4.txt
+
+student@T38:~/ajce/mca/rmca$ cp f1.txt f2.txt a
+student@T38:~/ajce/mca/rmca$ ls
+a  f1.txt  f2.txt  f3.txt  f4.txt
+
+
+
+student@T38:~/ajce/mca/rmca$ ls
+a  b  f1.txt  f2.txt  f3.txt  f4.txt
+student@T38:~/ajce/mca/rmca$ cp -R a b
+student@T38:~/ajce/mca/rmca$ ls
+a  b  f1.txt  f2.txt  f3.txt  f4.txt
+student@T38:~/ajce/mca/rmca$ cd ..
+student@T38:~/ajce/mca$ ls
+imca  lmca  rmca
+
+student@T38:~/ajce/mca$ cd lmca
+student@T38:~/ajce/mca/lmca$ mkdir s
+student@T38:~/ajce/mca/lmca$ mkdir h
+'
+student@T38:~/ajce/mca/lmca$ cp -R s h a
+student@T38:~/ajce/mca/lmca$ ls
+a  h  s
+student@T38:~/ajce/mca/lmca$ cd ..
+student@T38:~/ajce/mca$ cd imca
+student@T38:~/ajce/mca/imca$ cp -i i1.txt i2.txt
+cp: overwrite 'i2.txt'? y
+student@T38:~/ajce/mca/imca$ ls
+i1.txt  i2.txt
+student@T38:~/ajce/mca/imca$ cp -b i1.txt i2.txt
+student@T38:~/ajce/mca/imca$ ls
+i1.txt  i2.txt  i2.txt~
+student@T38:~/ajce/mca/imca$ ls -l i1.txt
+
+-rw-r--r-- 1 student student 8 Feb 11 17:10 i1.txt
+student@T38:~/ajce/mca/imca$ cp i1.txt i2.txt
+student@T38:~/ajce/mca/imca$ 
+
+ student@T38:~/ajce/mca/imca$ cp -s i1.txt i3.txt
+student@T38:~/ajce/mca/imca$ ls 
+i1.txt  i2.txt  i2.txt~  i3.txt
+student@T38:~/ajce/mca/imca$ 
+
+

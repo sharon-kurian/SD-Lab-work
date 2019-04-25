@@ -1,0 +1,411 @@
+USERNAME=student
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+J2SDKDIR=/usr/lib/jvm/java-8-oracle
+XDG_VTNR=2
+SSH_AUTH_SOCK=/run/user/1001/keyring/ssh
+XDG_SESSION_ID=2
+DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+USER=student
+DESKTOP_SESSION=ubuntu
+QT4_IM_MODULE=xim
+TEXTDOMAINDIR=/usr/share/locale/
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/a87e35ca_c148_43e7_b8a5_c6c3b5ef8f7a
+PWD=/home/student
+HOME=/home/student
+TEXTDOMAIN=im-config
+J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+SSH_AGENT_PID=2613
+QT_ACCESSIBILITY=1
+XDG_SESSION_TYPE=x11
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_SESSION_DESKTOP=ubuntu
+GJS_DEBUG_OUTPUT=stderr
+GTK_MODULES=gail:atk-bridge
+WINDOWPATH=2
+TERM=xterm-256color
+SHELL=/bin/bash
+VTE_VERSION=5201
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=ibus
+IM_CONFIG_PHASE=2
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+GPG_AGENT_INFO=/run/user/1001/gnupg/S.gpg-agent:0:1
+GNOME_TERMINAL_SERVICE=:1.67
+XDG_SEAT=seat0
+SHLVL=1
+GDMSESSION=ubuntu
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LOGNAME=student
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+XDG_RUNTIME_DIR=/run/user/1001
+XAUTHORITY=/run/user/1001/gdm/Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+SESSION_MANAGER=local/T38:@/tmp/.ICE-unix/2520,unix/T38:/tmp/.ICE-unix/2520
+LESSOPEN=| /usr/bin/lesspipe %s
+GTK_IM_MODULE=ibus
+_=/usr/bin/env
+student@T38:~$ echo $home
+
+student@T38:~$ echo $path
+
+student@T38:~$ export $x=12
+bash: export: `=12': not a valid identifier
+student@T38:~$ export $x = 12
+bash: export: `=': not a valid identifier
+bash: export: `12': not a valid identifier
+student@T38:~$ export $x = '12'
+bash: export: `=': not a valid identifier
+bash: export: `12': not a valid identifier
+student@T38:~$ set $x=12
+student@T38:~$ echo $x
+
+student@T38:~$ echo $logname
+
+student@T38:~$ echo $LOGNAME
+student
+student@T38:~$ echo $HOSTNAME
+T38
+student@T38:~$ echo $HOME
+/home/student
+student@T38:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+student@T38:~$ echo $MACHTYPE
+x86_64-pc-linux-gnu
+student@T38:~$ echo UID
+UID
+student@T38:~$ echo $UID
+1001
+student@T38:~$ echo $PWD
+/home/student
+student@T38:~$ echo $LANG
+en_IN
+student@T38:~$ echo $EDITOR
+
+student@T38:~$ echo $editor
+
+student@T38:~$ echo $TERM
+xterm-256color
+student@T38:~$ echo $SHELL
+/bin/bash
+student@T38:~$ gedit p22.sh
+student@T38:~$ gedit p24.sh
+student@T38:~$ gedit p26.sh
+student@T38:~$ chmod p26.sh
+chmod: missing operand after ‘p26.sh’
+Try 'chmod --help' for more information.
+student@T38:~$ chmod +x p26.sh
+student@T38:~$ ./p26.sh
+student@T38:~$ gedit p26.sh
+student@T38:~$ chmod +x p26.sh
+student@T38:~$ ./p26.sh
+10-1
+./p26.sh: line 2: test: 10-1: integer expression expected
+student@T38:~$ gedit p26.sh
+student@T38:~$ ./p26.sh
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+student@T38:~$ ./p27.sh
+bash: ./p27.sh: No such file or directory
+student@T38:~$ gedit p27.sh
+student@T38:~$ chmod +x p27.sh
+student@T38:~$ ./p27.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+student@T38:~$ gedit p28.sh
+student@T38:~$ chmod +x p28.sh
+student@T38:~$ ./p28.sh
+Adding 1 into sum
+Adding 2 into sum
+Adding 3 into sum
+Adding 4 into sum
+Adding 5 into sum
+Adding 6 into sum
+Adding 7 into sum
+Adding 8 into sum
+Adding 9 into sum
+Adding 10 into sum
+the sum is 55
+student@T38:~$ ./p28.sh
+Adding 1 into sum
+Adding 2 into sum
+Adding 3 into sum
+Adding 4 into sum
+Adding 5 into sum
+Adding 6 into sum
+Adding 7 into sum
+Adding 8 into sum
+Adding 9 into sum
+Adding 10 into sum
+the sum is 55
+student@T38:~$ ./p28.sh
+Adding 1 into sum
+Adding 2 into sum
+Adding 3 into sum
+Adding 4 into sum
+Adding 5 into sum
+Adding 6 into sum
+Adding 7 into sum
+Adding 8 into sum
+Adding 9 into sum
+Adding 10 into sum
+the sum is 55
+student@T38:~$ gedit p29.sh
+student@T38:~$ chmod +x p29.sh
+student@T38:~$ ./p29.sh
+enter the range
+9
+ Primenumber between 1 to 9 is:
+1
+2
+3
+5
+7
+student@T38:~$ gedit p30.sh
+student@T38:~$ chmod +x p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+4
+./p30.sh: line 8: syntax error near unexpected token `done'
+./p30.sh: line 8: `done'
+student@T38:~$ gedit p30.sh
+^C
+student@T38:~$ ./p30.sh
+enter a number
+5
+./p30.sh: line 3: [: too many arguments
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+10
+./p30.sh: line 3: syntax error near unexpected token `('
+./p30.sh: line 3: `$s=(($n % 2))'
+student@T38:~$ ./p30.sh
+enter a number
+10
+./p30.sh: line 3: syntax error near unexpected token `('
+./p30.sh: line 3: `$s=(( $n % 2 ))'
+student@T38:~$ ./p30.sh
+enter a number
+10
+./p30.sh: line 4: [: -nq: binary operator expected
+student@T38:~$ ./p30.sh
+enter a number
+10
+student@T38:~$ 
+student@T38:~$ 
+student@T38:~$ ./p30.sh
+enter a number
+10
+student@T38:~$ gedit prime.sh
+student@T38:~$ chmod +x prime.shell
+chmod: cannot access 'prime.shell': No such file or directory
+student@T38:~$ gedit prime.sh
+student@T38:~$ gedit p.sh
+student@T38:~$ chmod +x p.shell
+chmod: cannot access 'p.shell': No such file or directory
+student@T38:~$ gedit p.sh
+student@T38:~$ chmod +x p.shell
+chmod: cannot access 'p.shell': No such file or directory
+student@T38:~$ gedit p33.sh
+student@T38:~$ chmod +x p33.sh
+student@T38:~$ ./p33.sh
+enter a range
+6
+./p33.sh: line 13: [: 0-eq: unary operator expected
+./p33.sh: line 13: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+./p33.sh: line 13: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+./p33.sh: line 13: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+./p33.sh: line 8: [: 2-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+./p33.sh: line 13: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 2-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+./p33.sh: line 13: [: 0-eq: unary operator expected
+student@T38:~$ gedit p33.sh
+^C
+student@T38:~$ ./p33.sh
+enter a range
+5
+1
+2
+./p33.sh: line 8: [: 1-eq: unary operator expected
+3
+./p33.sh: line 8: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+4
+student@T38:~$ ./p33.sh
+enter a range
+5
+1
+2
+./p33.sh: line 8: [1-eq: command not found
+3
+./p33.sh: line 8: [0-eq: command not found
+./p33.sh: line 8: [1-eq: command not found
+4
+student@T38:~$ ./p33.sh
+enter a range
+6
+1
+2
+./p33.sh: line 8: [3%2-eq: command not found
+3
+./p33.sh: line 8: [4%2-eq: command not found
+./p33.sh: line 8: [4%3-eq: command not found
+4
+./p33.sh: line 8: [5%2-eq: command not found
+./p33.sh: line 8: [5%3-eq: command not found
+./p33.sh: line 8: [5%4-eq: command not found
+5
+student@T38:~$ ./p33.sh
+enter a range
+5
+1
+2
+./p33.sh: line 8: [: 1-eq: unary operator expected
+3
+./p33.sh: line 8: [: 0-eq: unary operator expected
+./p33.sh: line 8: [: 1-eq: unary operator expected
+4
+student@T38:~$ ./p33.sh
+enter a range
+7
+1
+2
+3
+5
+student@T38:~$ gedit p30.sh
+student@T38:~$ chmod +x p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+5
+./p30.sh: line 9: sum++: command not found
+1
+./p30.sh: line 9: sum++: command not found
+2
+./p30.sh: line 9: sum++: command not found
+3
+./p30.sh: line 9: sum++: command not found
+4
+./p30.sh: line 9: sum++: command not found
+5
+student@T38:~$ gedit p30.sh
+^C
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+7
+1
+2
+3
+4
+5
+6
+7
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+5
+0+1
+0+1+2
+0+1+2+3
+0+1+2+3+4
+0+1+2+3+4+5
+student@T38:~$ gedit p30.sh
+^C
+student@T38:~$ gedit p31.sh
+^C
+student@T38:~$ chmod +x p31.sh
+student@T38:~$ ./p31.sh
+enter value
+4
+sum of odd numbers =0
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+3
+./p30.sh: line 9: +: command not found
+0
+./p30.sh: line 9: +: command not found
+0
+./p30.sh: line 9: +: command not found
+0
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+6
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+8
+student@T38:~$ gedit p30.sh
+^C
+student@T38:~$ ./p30.sh
+enter a number
+5
+./p30.sh: line 9: 1: command not found
+0
+./p30.sh: line 9: 2: command not found
+0
+./p30.sh: line 9: 3: command not found
+0
+./p30.sh: line 9: 4: command not found
+0
+./p30.sh: line 9: 5: command not found
+0
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+5
+./p30.sh: line 8: 1: command not found
+./p30.sh: line 8: 3: command not found
+./p30.sh: line 8: 5: command not found
+0
+student@T38:~$ gedit p30.sh
+student@T38:~$ ./p30.sh
+enter a number
+5
+9
+student@T38:~$ gedit p30.sh
+student@T38:~$ gedit p30.sh
+^C
+student@T38:~$ gedit p34.sh
+student@T38:~$ chmod +x p34.sh
+student@T38:~$ ./p34.sh
+enter a number
+7
+./p34.sh: line 3: fact: command not found
+0
+student@T38:~$ gedit p34.sh
+^C
+student@T38:~$ ./p34.sh
+enter a number
+7
+5040
+student@T38:~$ ^C
+student@T38:~$ 
+

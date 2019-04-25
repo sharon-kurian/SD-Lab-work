@@ -1,0 +1,48 @@
+
+student@T38:~/sharon$ chmod u=rwx,g=rx,o=r f2.txt 
+student@T38:~/sharon$ ls -1 f2.txt
+f2.txt
+student@T38:~/sharon$ ls -l f2.txt
+-rwxr-xr-- 1 student student 9 Mar 14 14:42 f2.txt
+student@T38:~/sharon$ ls -l f3.txt
+-rw-r--r-- 1 student student 26 Mar 14 14:55 f3.txt
+student@T38:~/sharon$ chmod u=rwx,g=rx,o=r f3.txt 
+student@T38:~/sharon$ ls -l f3.txt
+-rwxr-xr-- 1 student student 26 Mar 14 14:55 f3.txt
+student@T38:~/sharon$ ls -l f1.txt
+-rw-r--r-- 1 student student 35 Mar 14 14:41 f1.txt
+student@T38:~/sharon$ chmod u=x,g=x,o=x f2.txt 
+student@T38:~/sharon$ cat f2.txt
+cat: f2.txt: Permission denied
+student@T38:~/sharon$ chmod u=r,g=r,o=r f2.txt 
+student@T38:~/sharon$ chmod 754 f1.txt
+student@T38:~/sharon$ ls -l f1.txt
+-rwxr-xr-- 1 student student 35 Mar 14 14:41 f1.txt
+student@T38:~/sharon$ ls -l f3.txt
+-rwxr-xr-- 1 student student 26 Mar 14 14:55 f3.txt
+student@T38:~/sharon$ chmod 754 f3.txt
+student@T38:~/sharon$ ls -l f3.txt
+-rwxr-xr-- 1 student student 26 Mar 14 14:55 f3.txt
+student@T38:~/sharon$ chmod 707 f3.txt
+student@T38:~/sharon$ ls -l f3.txt
+-rwx---rwx 1 student student 26 Mar 14 14:55 f3.txt
+student@T38:~/sharon$ chmod 222 f3.txt
+student@T38:~/sharon$ cat f3.txt
+cat: f3.txt: Permission denied
+student@T38:~/sharon$ cat >f4.txt
+1
+2
+3
+4
+5
+^C
+student@T38:~/sharon$ ls -l f4.txt
+-rw-r--r-- 1 student student 10 Mar 14 15:34 f4.txt
+student@T38:~/sharon$ chmod u+x f4.txt
+student@T38:~/sharon$ ls -l f4.txt
+-rwxr--r-- 1 student student 10 Mar 14 15:34 f4.txt
+student@T38:~/sharon$ chmod u+x,g+x f4.txt
+student@T38:~/sharon$ ls -l f4.txt
+-rwxr-xr-- 1 student student 10 Mar 14 15:34 f4.txt
+student@T38:~/sharon$ 
+

@@ -1,0 +1,13 @@
+
+student@T38:~$ gedit client.java
+student@T38:~$ gedit Client.java
+student@T38:~$ javac Client.java
+student@T38:~$ java Client
+Client connected to the server
+to Start the chat, type message and press Enter key
+haii
+how are you
+server:>frgfgddfgh
+server:>fdbfvbcc
+
+

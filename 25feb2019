@@ -1,0 +1,203 @@
+student@T38:~$ cd clg
+student@T38:~/clg$ cd shalu
+student@T38:~/clg/shalu$ head f2.txt
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+student@T38:~/clg/shalu$ head -n 5 f2.txt
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+student@T38:~/clg/shalu$ head -c 6 f2.txt
+student@T38:~/clg/shalu$ head f2.txt f3.txt
+==> f2.txt <==
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+
+==> f3.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Jammu student@T38:~/clg/shalu$ head -q f2.txt f3.txt
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+student@T38:~/clg/shalu$ head -v f2.txt
+==> f2.txt <==
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+student@T38:~/clg/shalu$ head -5 f1.txt f2.txt
+==> f1.txt <==
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy
+Got it!
+GeeksforGeeks
+	
+Login
+
+==> f2.txt <==
+Jammu and Kashmir
+Jharkhand
+
+
+Karnataka
+
+student@T38:~/clg/shalu$ tail  f2.txt
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T38:~/clg/shalu$ tail -n 3 f2.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T38:~/clg/shalu$ tail -3 f2.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T38:~/clg/shalu$ tail -3 -6 f2.txt
+tail: option used in invalid context -- 3
+student@T38:~/clg/shalu$ tail -c -6 f2.txt
+engal
+student@T38:~/clg/shalu$ tail -c 6 f2.txt
+engal
+student@T38:~/clg/shalu$ tail -c +263 f2.txt
+student@T38:~/clg/shalu$ tail -c +263 f2.txt
+student@T38:~/clg/shalu$ tail f2.txt f3.txt
+==> f2.txt <==
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+==> f3.txt <==
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+
+student@T38:~/clg/shalu$ tail -q f2.txt f3.txt
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+
+Uttar Pradesh
+Uttarakhand
+West Bengal
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+student@T38:~/clg/shalu$ tail -f logfile
+tail: cannot open 'logfile' for reading: No such file or directory
+tail: no files remaining
+student@T38:~/clg/shalu$ tail -f f3.txt
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+student@T38:~/clg/shalu$ tail --version
+tail (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin, David MacKenzie, Ian Lance Taylor,
+and Jim Meyering.
+student@T38:~/clg/shalu$ head -n 20 f2.txt | tail -n 5
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T38:~/clg/shalu$ head -n 10 f2.txt | tail -n 5
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+student@T38:~/clg/shalu$ 

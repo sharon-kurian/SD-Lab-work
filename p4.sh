@@ -1,0 +1,5 @@
+echo "The command is $0"
+echo "The command is $1"
+echo "The command is $2"
+echo "The command is $3"
+echo "The command is $4"

@@ -1,0 +1,196 @@
+student@T38:~$ cd rini
+student@T38:~/rini$ ls
+file1  file2  file3  file4
+student@T38:~/rini$ cd ..
+student@T38:~$ cd Rini
+\student@T38:~/Rini$ ls
+ appu    first   kochi   Luttappi      new       prgm5     shani
+ appu1   jetty   Lallu   Luttappitxt   poppo     prgm6,7   third
+ check   john    lolek   luttapy      'prgm 4'   sec
+student@T38:~/Rini$ ls > abc
+student@T38:~/Rini$ cat abc
+abc
+appu
+appu1
+check
+first
+jetty
+john
+kochi
+Lallu
+lolek
+Luttappi
+Luttappitxt
+luttapy
+new
+poppo
+prgm 4
+prgm5
+prgm6,7
+sec
+shani
+third
+student@T38:~/Rini$ cat xyz
+cat: xyz: No such file or directory
+student@T38:~/Rini$ cat > xyz
+hjbjhjhds
+dfkkd
+^C
+student@T38:~/Rini$ cat abc >> xyz
+student@T38:~/Rini$ cat xyz
+hjbjhjhds
+dfkkd
+abc
+appu
+appu1
+check
+first
+jetty
+john
+kochi
+Lallu
+lolek
+Luttappi
+Luttappitxt
+luttapy
+new
+poppo
+prgm 4
+prgm5
+prgm6,7
+sec
+shani
+third
+student@T38:~/Rini$ wc -l xyz > jkl
+student@T38:~/Rini$ cat jkl
+23 xyz
+student@T38:~/Rini$ head -3 xyl 
+head: cannot open 'xyl' for reading: No such file or directory
+student@T38:~/Rini$ head -3 abc
+abc
+appu
+appu1
+student@T38:~/Rini$ tail -3 abc
+sec
+shani
+third
+student@T38:~/Rini$ tail -3 abc > ijk
+student@T38:~/Rini$ cat ijk
+sec
+shani
+third
+student@T38:~/Rini$ wc -l abc
+21 abc
+student@T38:~/Rini$ wc -l < qw
+bash: qw: No such file or directory
+student@T38:~/Rini$ wc -l < abc
+21
+student@T38:~/Rini$ wc -l < abc > thu
+student@T38:~/Rini$ cat thu
+21
+student@T38:~/Rini$ ls
+ abc    appu1   first   jetty   john    Lallu   Luttappi      luttapy   poppo     prgm5     sec     third   xyz
+ appu   check   ijk     jkl     kochi   lolek   Luttappitxt   new      'prgm 4'   prgm6,7   shani   thu
+student@T38:~/Rini$ ls | head -3
+abc
+appu
+appu1
+student@T38:~/Rini$ ls | tail-1
+tail-1: command not found
+student@T38:~/Rini$ ls | tail -1
+xyz
+student@T38:~/Rini$ ls | head -3 | tail -1 > tuv
+student@T38:~/Rini$ cat tuv
+appu1
+student@T38:~/Rini$ wc | head -3 | tail -1 > tuv
+^C
+student@T38:~/Rini$ grep -cat > newfile
+grep: invalid option -- 't'
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+student@T38:~/Rini$ cat > newfile
+this is newfile
+amal jyothi kanjirappally
+^C
+student@T38:~/Rini$ ls -l more
+ls: cannot access 'more': No such file or directory
+student@T38:~/Rini$ ls -l |more
+total 104
+-rw-r--r-- 1 student student  132 Mar  2 14:22 abc
+drwxr-xr-x 2 student student 4096 Feb 19 20:24 appu
+drwxr-xr-x 2 student student 4096 Feb 19 20:25 appu1
+-rw-r--r-- 1 student student   74 Feb 19 20:19 check
+-rw-r--r-- 1 student student   11 Feb 19 20:11 first
+-rw-r--r-- 1 student student   16 Mar  2 14:31 ijk
+drwxr-xr-x 3 student student 4096 Feb 19 21:14 jetty
+-rw-r--r-- 1 student student    7 Mar  2 14:28 jkl
+-rw-r--r-- 1 student student   49 Feb 19 20:10 john
+-rw-r--r-- 1 student student    0 Feb 19 20:06 kochi
+drwxr-xr-x 3 student student 4096 Feb 12 20:45 Lallu
+-rw-r--r-- 1 student student   30 Feb 19 20:04 lolek
+drwxr-xr-x 4 student student 4096 Feb 15 21:23 Luttappi
+-rw-rw-r-- 1 student student 3934 Feb 15 21:29 Luttappitxt
+-rw-r--r-- 1 student student   13 Feb 12 21:25 luttapy
+-rw-r--r-- 1 student student  761 Feb 12 20:30 new
+-rw-r--r-- 1 student student   42 Mar  2 14:59 newfile
+drwxr-xr-x 5 student student 4096 Feb 12 20:50 poppo
+-rw-rw-r-- 1 student student 3934 Mar  1 14:22 prgm 4
+-rw-rw-r-- 1 student student 6321 Mar  1 14:11 prgm5
+-rw-rw-r-- 1 student student 2780 Mar  1 14:24 prgm6,7
+-rw-r--r-- 1 student student   12 Feb 19 20:12 sec
+-rw-r--r-- 1 student student   21 Feb 19 20:26 shani
+-rw-r--r-- 1 student student   11 Feb 19 20:12 third
+-rw-r--r-- 1 student student    3 Mar  2 14:42 thu
+-rw-r--r-- 1 student student    0 Mar  2 14:56 tuv
+-rw-r--r-- 1 student student  148 Mar  2 14:26 xyz
+student@T38:~/Rini$ cat newfile | grep -v a
+this is newfile
+student@T38:~/Rini$ cat newfile | grep -w a
+student@T38:~/Rini$ cat newfile | grep "amal"
+amal jyothi kanjirappally
+student@T38:~/Rini$ cat > new
+THIS IS NEW
+this is new
+AMAL JYOTHI
+amal jyothi
+^C
+student@T38:~/Rini$ cat new | grep -i "amal"
+AMAL JYOTHI
+amal jyothi
+student@T38:~/Rini$ cat new | grep -i 'is|new'
+student@T38:~/Rini$ cat new | grep -i 'is'|'new'
+
+Command 'new' not found, but can be installed with:
+
+apt install mmh
+apt install nmh
+
+Ask your administrator to install one of them.
+
+student@T38:~/Rini$ cat new | grep -w 'is | new'
+student@T38:~/Rini$ cat new | grep -w 'is' | 'new'
+
+Command 'new' not found, but can be installed with:
+
+apt install mmh
+apt install nmh
+
+Ask your administrator to install one of them.
+
+student@T38:~/Rini$ cat new | grep -w 'is' 
+this is new
+student@T38:~/Rini$ cat new | grep -B 2 "amal" 
+this is new
+AMAL JYOTHI
+amal jyothi
+student@T38:~/Rini$ cat new | grep -A 2 "this" 
+this is new
+AMAL JYOTHI
+amal jyothi
+student@T38:~/Rini$ cat new | grep -n "amal"
+4:amal jyothi
+student@T38:~/Rini$ cat new | grep  "^amal"
+amal jyothi
+student@T38:~/Rini$ cat new | grep  "amal$"
+student@T38:~/Rini$ 
+

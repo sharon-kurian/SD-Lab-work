@@ -1,0 +1,71 @@
+
+student@T10:~/ajce1/mca$ paste f1.txt f2.txt
+anu	Thrissur
+ani	Kottayam
+shalu	Kochi
+sharon	Palakkad
+student@T10:~/ajce1/mca$ paste -d "|" f1.txt f2.txt
+anu|Thrissur
+ani|Kottayam
+shalu|Kochi
+sharon|Palakkad
+student@T10:~/ajce1/mca$ paste -d "|" f1.txt f2.txt f3.txt
+anu|Thrissur|1
+ani|Kottayam|2
+shalu|Kochi|3
+sharon|Palakkad|4
+||5
+||6
+||7
+||8
+student@T10:~/ajce1/mca$ paste -d "|" f1.txt f2.txt f3.txt
+anu|Thrissur|1
+ani|Kottayam|2
+shalu|Kochi|3
+sharon|Palakkad|4
+student@T10:~/ajce1/mca$ paste -d "|," f1.txt f2.txt f3.txt
+anu|Thrissur,1
+ani|Kottayam,2
+shalu|Kochi,3
+sharon|Palakkad,4
+student@T10:~/ajce1/mca$ paste -d ",," f1.txt f2.txt f3.txt
+anu,Thrissur,1
+ani,Kottayam,2
+shalu,Kochi,3
+sharon,Palakkad,4
+student@T10:~/ajce1/mca$ paste -s f1.txt f2.txt f3.txt
+anu	ani	shalu	sharon
+Thrissur	Kottayam	Kochi	Palakkad
+1	2	3	4
+student@T10:~/ajce1/mca$ paste -s -d f1.txt f2.txt f3.txt
+ThrissurfKottayam1Kochi.Palakkad
+1f213.4
+student@T10:~/ajce1/mca$ paste -s -d ":" f1.txt f2.txt f3.txt
+anu:ani:shalu:sharon
+Thrissur:Kottayam:Kochi:Palakkad
+1:2:3:4
+student@T10:~/ajce1/mca$ paste - - - <f4.txt
+anu	ani	shalu
+sharon		
+s
+student@T10:~/ajce1/mca$ paste - - - <f1.txt
+anu	shalu	sharon
+student@T10:~/ajce1/mca$ paste - - <f1.txt
+anu	shalu
+sharon	
+student@T10:~/ajce1/mca$ paste --v f1.txt
+paste (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David M. Ihnat and David MacKenzie.
+student@T10:~/ajce1/mca$ paste - - <f1.txt
+anu	shalu
+sharon	
+student@T10:~/ajce1/mca$ paste - - <f4.txt
+anu	ani
+shalu	sharon
+student@T10:~/ajce1/mca$ 
+

@@ -1,0 +1,15 @@
+
+student@T38:~$ javac Server.java
+student@T38:~$ java Server
+waiting for client.........
+client connected 
+client:>haii
+frgfgddfgh
+client:>how are you
+fdbfvbcc
+
+
+
+
+
+
